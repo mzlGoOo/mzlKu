@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h2><a href="index.html">返回</a></h2>
+		
+		
+		<br />
+		<br />
+		<br />
+		<h1>这是一个h1标签行</h1>
+		<h3>这是一个h3标签行</h3>
+		<p>这是一个p标签行</p>
+		<button>这是一个按钮</button>
+		<div></div>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+	<script>
+		$(function(){
+			$("h1,h3,p,button").click(function(event){
+				$("div").html("点击事件是由"+event.target.nodeName+"触发的");
+//				nodeName 属性指定节点的节点名称。
+//				如果节点是元素节点，则 nodeName 属性返回标签名。
+//				入股节点是属性节点，则 nodeName 属性返回属性的名称。
+//				对于其他节点类型，nodeName 属性返回不同节点类型的不同名称。
+			});
+		});
+	</script>
+</html>

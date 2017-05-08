@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			p{
+				border: 1px red solid;
+				width: 500px;
+				height: 60px;
+				overflow: hidden;
+				line-height: 30px;
+			}
+			a{display: block;width: 200px;}
+			span{display: block;border: 1px black solid;width: 100px;height:100%;}
+			
+		</style>
+	</head>
+	<body>
+		<h2><a href="index.html">返回</a></h2>
+		<br />
+		<br />
+		<button class="btn1">获取事件的类型</button>
+		<p class="p1"></p>
+		<br />
+		<button class="btn2">获取到触发事件的元素1</button>
+		<p class="p2"></p>
+		<br />
+		<a class="btn3" href='index.html'>获取到触发事件的元素2</a>
+		<p class="p3"></p>
+		<br />
+		<button class="btn4">获取鼠标相对于页面的横纵坐标</button>
+		<p class="p4"><span></span></p>
+		<br />
+		<button class="btn5">鼠标单击事件中获取鼠标的左、中、右按键</button>
+		<p class="p5"></p>
+		<br />
+		<button class="btn6">获取按键ctrl</button>
+		<p class="p6"></p>
+		<br />
+	</body>
+	<script type="text/javascript" src="img/jquery.min.js" ></script>
+	<script>
+		$(function(){
+			//获取事件的类型
+			$(".btn1").click(function(event){
+				$(".p1").html("button的事件是"+event.type+"事件");
+			});
+			//获取到触发事件的元素1
+			$(".btn2").click(function(event){
+				$(".p2").html("button的事件是"+event.target+"事件");
+				return false;//阻止默认事件或者冒泡事件的发生
+			});
+			//获取到触发事件的元素2
+			$(".btn3").click(function(event){
+				$(".p3").html(event.target.href);
+				return false;//阻止事件触发(即阻止链接到目标链接上)
+				//return false=event.stopPropagation
+			});
+			//获得光标相对于页面的x坐标和y坐标
+			$(".btn4").click(function(){
+				$(".p4").mousemove(function(event){
+					$(this).find("span").css({"left":event.pageX,"top":event.pageY});
+					$(this).find("span").html("纵坐标"+event.pageY+"<br />"+"横坐标"+event.pageX);
+				});
+			});
+			//获取鼠标的左、中、右三个按键
+			$(".btn5").mousedown(function(event){
+				$(".p5").html("您点击了鼠标的"+event.which+"号键");
+				/*1----代表点击的是鼠标的左键
+				 *2----代表点击的是鼠标的中键
+				 *3----代表点击的是鼠标的右键
+				 */
+				if (3==event.which) {
+//					alert("你点击的是鼠标的右键");
+					$(".p5").append("<span id='add-span'></span>");
+					$("#add-span").css({"border":"1px red solid","background":"#ccc","width":"150px","height":"250px","position":"absolute","top":"700px","left":"300px"});
+					$("#add-span").html("这里写的内容就是鼠标点击右键的出现的框");
+				}
+			});
+			//获取键盘的按键事件
+			$(".btn6").click(function(){
+				$(document).keydown(function(event){
+					if (event.ctrlKey) {
+						//这里返回的是布尔类型
+						//这里的ctrlKey只是识别按键ctrl,其实可以写很多个按键的识别,这点类似于ASCII码
+						$(".p6").html("您按下的按键是"+event.ctrlKey);
+					}
+				});
+			});
+		});
+	</script>
+</html>

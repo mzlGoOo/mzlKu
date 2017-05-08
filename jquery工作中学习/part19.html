@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>一些关于$()的深入解析</title>
+	</head>
+	<body>
+		<h2><a href="index.html">返回</a></h2>
+		<br />
+		<br />
+		<br />
+		<input type="button" value="按钮" class="btn1"/>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script>
+		$(function(){
+			$(".btn1").click(function(){
+				$("<a href='#abc'>返回首页</a>");
+				$("<a id='abc'></a>");	
+
+			})
+			
+		});
+		
+	</script>
+</html>

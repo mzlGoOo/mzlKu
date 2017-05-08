@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				float: left;
+				padding: 20px;
+			}
+			.p1{
+				text-transform: capitalize;
+			}
+			.p2{
+				text-transform: uppercase;
+			}
+			.p3{
+				text-transform: lowercase;
+			}
+			
+			
+			.p5{
+				border: 1px black solid;
+				white-space: pre;
+			}
+			.p6{
+				border: 1px black solid;
+				white-space: nowrap;
+			}
+			.p7{
+				border: 1px black solid;
+				white-space: normal;
+			}
+			.p8{
+				border: 1px black solid;
+				white-space: pre-line;
+			}
+			.p9{
+				border: 1px black solid;
+				white-space: pre-wrap;
+			}
+			
+			.test p{border:1px solid #000;font-size:16px;line-height:2;}
+			.test a{margin-left:5px;font-size:12px;border: 1px red solid;}
+			.baseline a{vertical-align:baseline;}
+			.sub a{vertical-align:sub;}
+			.super a{vertical-align:super;}
+			.top a{vertical-align:top;}
+			.text-top a{vertical-align:text-top;}
+			.middle a{vertical-align:middle;}
+			.bottom a{vertical-align:bottom;}
+			.text-bottom a{vertical-align:text-bottom;}
+			.length a{vertical-align:10px;}
+		</style>
+	</head>
+	<body>
+		<h2><a href="index.html">返回</a></h2>
+		<div style="border: 1px red solid;width: 150px;">
+			<h4>text-transform检索或设置对象中的文本的大小写。</h4>
+			<p class="p1">I am a boy</p>
+			<p class="p2">I am a boy</p>
+			<p class="p3">I am a boy</p>
+			<p class="p4">I am a boy</p>
+		</div>
+		<div style="border: 1px red solid;width: 180px;">
+			<h4>white-space设置或检索对象内空格的处理方式。</h4>
+			<p class="p5">轻轻地我走了514351223</p>
+			<p class="p6">轻轻地我走了21231565</p>
+			<p class="p7">轻轻地我走了2312315632132132156</p>
+			<p class="p8">轻轻地我走了122315431321123213211</p>
+			<p class="p9">轻轻地我走了2123352152131346788731</p>
+		</div>
+		<div style="border: 1px red solid;width: 300px;" class="test">
+			<h4>***vertical-align设置或检索内联元素在行框内的垂直对其方式。</h4>
+			<li class="baseline">
+				<strong>与基线对齐</strong>
+				<p>参考内容<a href="?">基线对齐</a></p>
+			</li>
+			<li class="sub">
+				<strong>与参考内容的下标对齐</strong>
+				<p>参考内容<a href="?">下标对齐</a></p>
+			</li>
+			<li class="super">
+				<strong>与参考内容的上标对齐</strong>
+				<p>参考内容<a href="?">上标对齐</a></p>
+			</li>
+			<li class="top">
+				<strong>对象的内容与对象顶端对齐</strong>
+				<p>参考内容<a href="?">要对齐的内容</a></p>
+			</li>
+			<li class="text-top">
+				<strong>对象的文本与对象顶端对齐</strong>
+				<p>参考内容<a href="?">要对齐的内容</a></p>
+			</li>
+			<li class="middle">
+				<strong>对象的内容与对象中部对齐</strong>
+				<p>参考内容<a href="?">要对齐的内容</a></p>
+			</li>
+			<li class="bottom">
+				<strong>对象的内容与对象底端对齐</strong>
+				<p>参考内容<a href="?">要对齐的内容</a></p>
+			</li>
+			<li class="text-bottom">
+				<strong>对象的文本与对象顶端对齐</strong>
+				<p>参考内容<a href="?">要对齐的内容</a></p>
+			</li>
+			<li class="length">
+				<strong>与基线算起的偏移量</strong>
+				<p>参考内容<a href="?">偏移量对齐</a></p>
+			</li>
+		</div>
+	</body>
+		<!--text-transform:
+		none：无转换
+		capitalize：将每个单词的第一个字母转换成大写
+		uppercase：将每个单词转换成大写
+		lowercase：将每个单词转换成小写
+		full-width：将所有字符转换成fullwidth形式。如果字符没有相应的fullwidth形式，将保留原样。这个值通常用于排版拉丁字符和数字等表意符号。（CSS3）-->
+
+		<!--white-space:
+		normal： 默认处理方式。
+		pre： 用等宽字体显示预先格式化的文本，不合并文字间的空白距离，当文字超出边界时不换行。可查阅pre对象
+		nowrap：强制在同一行内显示所有文本，合并文本间的多余空白，直到文本结束或者遭遇br对象。
+		pre-wrap：用等宽字体显示预先格式化的文本，不合并文字间的空白距离，当文字碰到边界时发生换行。
+		pre-line：保持文本的换行，不保留文字间的空白距离，当文字碰到边界时发生换行。-->
+		
+		<!--word-spacing:
+		检索或设置对象中的单词之间的最小，最大和最佳间隙。-->
+		
+		<!--letter-spacing:
+		检索或设置对象中的字符之间的最小，最大和最佳间隙。-->
+</html>

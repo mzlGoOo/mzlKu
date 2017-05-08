@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+		window.onload=function(){
+			document.getElementById("demo").onclick=function(e){
+			    var eve = e || window.event;
+			    var x = eve.clientX,  // 相对于客户端的X坐标
+			        y = eve.clientY,  // 相对于客户端的Y坐标
+			        x1 = eve.screenX,  // 相对于计算机屏幕的X坐标
+			        y1 = eve.screenY;  // 相对于计算机屏幕的Y坐标
+			        
+			    alert(
+			        "相对客户端的坐标：\n"+
+			        "x = "+x+"\n"+
+			        "y = "+y+"\n\n"+
+			        "相对屏幕的坐标：\n"+
+			        "x = "+x1+"\n"+
+			        "y = "+y1
+			    );
+			}
+		}
+			
+		</script>
+		<style>
+			div{
+				cursor:crosshair;
+			}
+		</style>
+	</head>
+	<body>
+		<br />
+		<br />
+		<br />
+		<h2><a href="index.html">返回</a></h2>
+		<br />
+		<div id="demo" style="border: 1px red solid;width: 500px;height: 200px;">
+			点击这里的某一个地方会出现对应的相对坐标
+		</div>
+	</body>
+</html>

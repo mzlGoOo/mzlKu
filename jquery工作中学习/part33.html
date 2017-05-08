@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.div1{
+				border: 1px red solid;
+				width: 250px;
+				height: 50px;
+			}
+			.div2{
+				border: 1px black solid;
+				width: 250px;
+				height: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2><a href="index.html">返回</a></h2>
+		<br />
+		<br />
+		<p>1.客户区坐标的位置（clientX,clientY）<br />
+			所有浏览器支持这两个属性,他们两的值表示事件发生时鼠标的指针在视口中的水平和垂直坐标<br />
+			2.页面坐标位置（pageX,pageY）<br />
+			这两个属性表示鼠标在页面中的位置，因此坐标是从页面本身而非视图的左边和顶端计算的，<br />
+			<span style="font-weight: 900;font-size: 30px;color: red;">在页面没有滚动的情况下</span>pageX和pageY 的值与clientX和clientY的值相等<br />	</p>
+			
+			<p style="background: #8A2BE2; color: floralwhite;width: 350px;">*****简单的说就是clientY和pageY的区别是：<br />
+			clientY是相对于可视窗口而言的，<br/>
+			pageY是相对于整个页面而言的<br>
+			<strong style="color: red;">但是如果一个页面么有出现滚动条的话clientY和pageY是相同的</strong>
+			</p>
+			<p style="background: #8A2BE2;color: floralwhite;width: 350px;">
+				<strong>类似于window和document的区别</strong>
+				jQuery(window).height()代表了当前可见区域的大小<br />
+				而jQuery(document).height()则代表了整个文档的高度，可视具体情况使用.<br />
+			</p>
+		<h3>pageY和pageX</h3>
+		<div class="div1"></div>
+		<h3>clientY和clientX</h3>
+		<div class="div2"></div>
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		
+	</body>
+	<script type="text/javascript" src="img/jquery.min.js" ></script>
+	<script>
+		$(function(){
+			//pageY和pageX的用法
+			$(document).mousemove(function(event){
+				$(".div1").html("相对于界面的纵坐标是"+event.pageY+"<br />"+"相对于界面的横坐标是"+event.pageX);
+			});
+			//clientX和clientY的用法
+			$(document).mousemove(function(event){
+				$(".div2").html("相对于可视窗口的纵坐标是"+event.clientY+"<br />"+"相对于可视窗口的横坐标是"+event.clientX);
+			});
+		});
+	</script>
+</html>
