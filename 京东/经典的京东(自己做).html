@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}	
+			body{
+				overflow: hidden;
+			}
+			li{
+				list-style: none;
+				width: 100%;
+				text-align: center;
+				height: 50px;
+				border: 1px #ccc solid;
+				line-height: 50px;
+			}
+			p{
+				width: 200px;
+				height: 50px;
+				background: #CCCCCC;
+				cursor: pointer;
+				text-align: center;
+				border: 1px #CCCCCC solid;
+				line-height: 50px;
+			}
+			#main1{
+				width: 200px;
+				display: none;
+			}
+			#mainright{
+				width: 200px;
+			
+			}
+			#mainright li{
+					display:none ;
+				height: 50px;
+				text-align: center;
+				line-height: 50px;
+				background: #eee;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div style="float: left;">
+			<p>题目</p>
+			<ul id="main1">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+		</div>
+		<div style="margin-top: 50px;float:left;">
+			<ul id="mainright">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+		</div>
+		<script>
+			var titleAll=document.getElementsByTagName("p")[0];
+			var main1=document.getElementById("main1");
+			var mainLi=main1.getElementsByTagName("li");
+			var mainright=document.getElementById("mainright");
+			var mainrightli=mainright.getElementsByTagName("li");
+			//点击切换效果利用判断才实现
+			titleAll.onclick=function(){
+				if (main1.style.display=="block") {
+					main1.style.display="none";
+				} else{
+					main1.style.display="block";
+					for (var i=0;i<mainLi.length;i++) {
+						mainLi[i].index=i;
+							mainLi[i].onmouseover=function(){
+								mainrightli[this.index].style.display="block";
+								mainrightli[this.index].style.visibility="visible";
+								mainrightli[this.index].onmouseout=function(){
+									this.style.visibility="hidden";
+								}
+								
+							}
+							mainrightli[i].onmouseout=function(){
+								this.style.visibility="hidden";
+								mainLi[i].onmouseover=function(){
+									mainrightli[this.index].style.visibility="hidden";
+								}
+							}
+					}
+					
+				}
+				
+			}
+			
+		</script>
+	</body>
+		
+</html>
