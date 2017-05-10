@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				height: 1500px;
+				background: red;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script>
+		//scroll事件
+			$(window).scroll(function(){
+				$(".p1").text("scroll事件所反应出来的内容");
+			});
+			
+			
+			var prevTop = 0,
+  			    currTop = 0;
+			$(window).scroll(function() {
+			    currTop = $(window).scrollTop();
+			    if (currTop<=prevTop) { //判断小于则为向上滚动
+					$(".p2").html("你向上滑动了");
+			    } else {
+					$(".p2").html("你向下滑动了");
+			    }
+			    //prevTop = currTop; //IE下有BUG，所以用以下方式
+//			    setTimeout(function(){prevTop = currTop},0);
+			});
+		</script>
+	</head>
+	<body>
+		<h2><a href="index.html">返回</a></h2>
+		<br />
+		<br />
+		<div>
+			<p class="p1" style="background: yellow; border: 2px black solid;"></p>
+			<p class="p2" style="background: #9ACD32; border: 2px black solid;position: fixed;"></p>
+		</div>
+	</body>
+</html>

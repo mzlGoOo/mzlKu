@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				border: 2px red solid;
+				background: #8A2BE2;
+				width: 100px;
+				height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2><a href="index.html">返回</a></h2>
+		<br />
+		<br />
+		<br />
+		<input type="button" value="我是控制按钮 " class="btnall" />
+		<br />
+		<br />
+		<br />
+		<input type="button" value="我是控制按钮1" class="btnall1" />
+		<br />
+		<br />
+		<br />
+		<input type="button" value="我是控制按钮2" class="btnall2" />
+		<br />
+		<br />
+		<br />
+		<input type="button" value="我是控制按钮3 点我会有动画哟" class="btnall3" />
+		<br />
+		<br />
+		<br />
+		<p style="font-size: 30px; border: 1px red solid;" class="text">123456</p>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<input type="button" value="点我阻止动画效果" class="btnall4" />
+		<div>
+			
+		</div>
+	</body>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script>
+			$(function(){
+				$(".btnall").on("click",function(){
+					$("div").animate({"width":"50px","height":"50px"},3000);
+//					jquery animate函数不能处理背景色渐变，需要使用jquery.color插件
+				});
+				$(".btnall1").on("click",function(){
+					$("div")
+					.css("background","darkcyan")
+					.animate({"width":"+=50px"},3000)
+					.fadeTo("fast",0.5)
+					.hide(2000)
+					.fadeIn(5000)
+					.slideToggle(2000);
+				});
+				
+				$(".btnall2").on("click",function(){
+					$("div").animate({"width":"+=50px"});
+					
+				});
+//					fadeTo 影响透明度的
+//					jquery animate函数不能处理背景色渐变，需要使用jquery.color插件
+				$("p").click(function(){
+					$("p").toggle(5000);
+				})
+				$(".btnall3").click(function(){
+					$(this).fadeTo(2000,0.5);
+				})
+				//fadeTo() 方法将被选元素的不透明度逐渐地改变为指定的值
+				 
+//				  function() {
+//				  	
+//				  },
+//				  function() {
+//				  	$("p").css({"color": "blue"});
+//				  },
+//				  function() {
+//				  	$("p").css({"color": "green"});
+//				  
+//				  }
+//				stop()阻止动画效果
+//				stop()里面可以写属性和参数
+//              $(selector).stop(stopAll,goToEnd);
+//				可选的 stopAll 参数规定是否应该清除动画队列。默认是 false，即仅停止活动的动画，允许任何排入队列的动画向后执行。
+//				可选的 goToEnd 参数规定是否立即完成当前动画。默认是 false。
+				$(".btnall4").click(function(){
+					$("div").stop();
+				});
+					
+				
+			});
+		</script>
+	
+	
+</html>

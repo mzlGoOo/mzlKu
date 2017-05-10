@@ -1,0 +1,19 @@
+{
+	"method" : "new_file",
+	"result" : {
+		"list" :[{
+				"name": "张三",
+				"age": 18,
+				"sex":"男"
+			},{
+				"name": "psyche",
+				"age": 18,
+				"sex":"男"
+			},{
+				"name": "cat",
+				"age": 17,
+				"sex":"男"
+			}],
+        "totalnumber": 2
+	}
+}

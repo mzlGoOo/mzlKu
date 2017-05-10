@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.left,.right{
+				width: 160px;
+				float: left;
+				margin-left: 50px;
+			}	
+		</style>
+	</head>
+	<body>
+		<h2><a href="index.html">返回</a></h2>
+		<br />
+		<br />
+		<!--左边的下拉列表框-->
+		<div class="left" >
+			<!--multiple 属性规定输入字段可选择多个值。-->
+			<select multiple="multiple" style="width: 140px;height: 200px;">
+				<option>选项1</option>
+				<option>选项2</option>
+				<option>选项3</option>
+				<option>选项4</option>
+				<option>选项5</option>
+				<option>选项6</option>
+				<option>选项7</option>
+				<option>选项8</option>
+				<option>选项9</option>
+			</select>	
+			<button class="btn1">选中增加到右边>>></button>
+			<button class="btn2">全部增加到右边>>></button>
+			<button class="reset1">复位原先的顺序</button>
+		</div>
+		<!--右边的下拉列表框-->
+		<div class="right" >
+			<select multiple="multiple" style="width: 140px;height: 200px;">
+				
+			</select>	
+			<button class="btn3"><<<选中删除到左边</button>
+			<button class="btn4"><<<全部删除到左边</button>
+			<button class="reset2">复位原先的顺序</button>
+		</div>
+	</body>
+	<script type="text/javascript" src="img/jquery.min.js" ></script>
+	<script>
+		$(function(){
+			//选中的增加到右边的列表框
+			$(".btn1").on("click",function(){
+				var addOption=$(".left option:selected");
+				$(".right select").append(addOption);
+			});
+			//全部都增加到右边的列表框
+			$(".btn2").click(function(){
+				var addAll=$(".left option");
+				$(".right select").append(addAll);
+			});
+			//选中的删除到左边的列表框
+			$(".btn3").click(function(){
+				var deleteOption=$(".right option:selected");
+				$(".left select").append(deleteOption);
+			});
+			//全部都删除到左边的列表框
+			$(".btn4").click(function(){
+				var deleteAll=$(".right option");
+				$(".left select").append(deleteAll);
+			});
+			//输出所有option的下标
+			$(".reset1").click(function(){
+				$(".left option").each(function(){
+					var a=$(this).index();
+				});
+			});
+		});
+	</script>
+</html>

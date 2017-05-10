@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h2><a href="index.html">返回</a></h2>
+		<br />
+		<br />
+		<br />
+		<br />
+		<input class="first"  type="button" value="点击我给被选元素增加数据" />
+		<br />
+		<br />
+		<br />
+		<br />
+		<input  class="second" type="button" value="点击我从被选元素获取数据" />
+		<br />
+		<div style="border: 1px black solid;width:500px;height: 300px;">
+			<input type="text" class="text" placeholder="显示的内容就在这里"/>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+	<script>
+		$(function(){
+			$(".first").click(function(){
+				$("div").data("s","123456");
+				//定义增加的名字为s,内容为123456
+			});
+			$(".second").click(function(){
+			$(".text").val($("div").data("s"));
+			//拿出来s中的内容
+			});
+		})
+	</script>
+</html>

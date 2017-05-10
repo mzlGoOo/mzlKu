@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.first-ajax{
+				border: 1px red solid; 
+				width:1000px;
+				
+			}
+		</style>
+		<script type="text/javascript" src="img/jquery.min.js" ></script>
+		<script>
+			$(function(){
+				//载入html文件
+				$(".btn1").click(function(){
+					//这里是将整个的页面都导入进来
+//					$(".first-ajax").load("part1.html");
+					//这里是将页面的其中一部分导入进来(筛选载入的html文件)
+					$(".first-ajax").load("part1.html .btn2")
+				});
+				//回调参数格式
+				$(".btn2").click(function(){
+					//回调函数针对加载完成后才能执行的操作
+					$(".second-ajax").load("part1.html",function(responseText,textStatus,XMLHttpRequest){
+						//responseText   请求返回的内容
+						//textStatus     请求状态(success、error、notmodified、timeout 4种)
+						//XMLHttpRequest XMLHttpRequest对象
+					});
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h2><a href="index.html">返回</a></h2>
+		<br />
+		<br />
+		<button class="btn1">按钮1</button>
+		<button class="btn2">按钮2</button>
+		<button class="btn3">按钮3</button>
+		<button class="btn4">按钮4</button>
+		<div class="first-ajax"></div>
+		<div class="second-ajax"></div>
+	</body>
+</html>

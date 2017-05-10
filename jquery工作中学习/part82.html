@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			p{
+				border: 1px red solid;
+				width: 200px;
+				height: 50px;
+				background: #8A2BE2;
+				color: white;
+				
+				position: absolute;
+				clip: rect(0 180px 50px 0);
+				/*这里的四个数字严格按照上右下左的顺序排开   这四个数字的裁剪方式是从上裁剪出0px,从右裁剪出150px,从下裁剪出20px,从左裁剪出0px 
+				clip这里规定的是裁剪的内容的区域,只能有这么一个形状来进行裁剪(即rect(矩形)来进行裁剪)
+				/*clip这个属性用于定义一个剪裁矩形。对于一个绝对定义元素，在这个矩形内的内容才可见。
+				 * 出了这个剪裁区域的内容会根据 overflow 的值来处理。剪裁区域可能比元素的内容区大，也可能比内容区小。*/
+			}
+		</style>
+	</head>
+	<body>
+		<br />
+		<br />
+		<br />
+		<h2><a href="index.html">返回</a></h2>
+		<br />
+		<br />
+		<br />
+		<p>
+			这里就是需要调整的文字
+		</p>
+	</body>
+</html>

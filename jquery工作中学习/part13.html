@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h2><a href="index.html">返回</a></h2>
+		<br />
+		<br />
+		<br />
+		<br />
+		<div>
+			<button>点我增加元素</button>
+			<input  type="text" placeholder="在这里填数字" value="123" width="200px" height="30px"/>
+		</div>
+		<br />
+		<br />
+		<br />
+		<br />
+		<p id="p1" onmousedown="getEventTrigger(event)">Click on this paragraph. An alert box will
+			show which element triggered the event.</p>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+	<script>
+		$(function(){
+			$("button").on("click",function(){
+				var a=$("input").val().length;
+				event.stopPropagation();
+//				event.stopPropagation();这个事件阻止了接下来的alert(a)事件. 
+				
+				alert(a);
+				
+			});
+		});
+			
+			function getEventTrigger(event)
+			  { 
+			  x=event.target; 
+//			  target 事件属性可返回事件的目标节点（触发该事件的节点），如生成事件的元素、文档或窗口。
+			  alert("The id of the triggered element: "
+			  + x.id);
+			  }
+	</script>
+</html>

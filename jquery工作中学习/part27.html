@@ -1,0 +1,38 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title></title>
+  <script type="text/javascript">
+//	window.onload=function(){
+//		var div1=document.getElementById("div1");
+//		document.onmousemove=function(ev){
+//			var oEvent=ev||event;
+//			var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+//			var scrollLeft=document.documentElement.scrollLeft||document.body.scrollLeft;
+//			div1.style.top=oEvent.clientY+scrollTop+"px";
+//			div1.style.left=oEvent.clientX+scrollLeft+"px";
+//		}
+//	}
+
+    window.onload = function () {
+      var div1 = document.getElementById('div1');
+      document.onmousemove = function (ev) {
+        //IE支持event，firefox不支持
+        //这里的意思是如果ev为空则执行event
+        var oEvent = ev || event;
+        //获取当前页面相对于HTML页面和Body的位置(默认为0)
+        var scrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft;
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      	//clientY 事件属性返回当事件被触发时鼠标指针相对于浏览器页面（客户区）的垂直坐标
+     		div1.style.top = oEvent.clientY + scrollTop + 'px'; //Y
+        div1.style.left = oEvent.clientX + scrollLeft + 'px';//X
+      };
+    };
+ 
+  </script>
+</head>
+<body>
+  <img src="img/de261f4f5de2e7c629af091fb560ae51.gif" id="div1" style="width: 100px; height: 50px; background-color: blue; position: absolute;">
+	
+</body>
+</html>
