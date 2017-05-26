@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+		<style>
+			div{margin-top: 50px;
+				width: 200px;
+				height: 200px;
+				background-color: blueviolet;
+			}
+			p{
+				color: red;
+				font-size: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2><a href="index.html">返回</a></h2>
+		<button>按钮</button>
+		<div>
+			我们
+			<p>12345</p>
+		</div>
+	</body>
+	<script>
+		$(function(){
+			$("button").click(function(){
+				$("div>p").hide();
+			});
+			
+		});
+	</script>
+</html>

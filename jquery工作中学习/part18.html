@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>(runoob.com)</title>
+<script src="js/jquery.min.js">
+</script>
+
+
+<!--html属性和DOM属性的值的区别
+.attr()-------------html属性的值
+.prop()-------------DOM属性的值-->
+<!--有些时候.attr()和.prop()会有一些不适当，更多的是运用.val()多用途的方法-->
+
+
+<!--prop() 和 attr() 可能返回不同的值。本实例演示了当用于返回复选框的 "checked" 状态时的不同。-->
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$("#p1").html("attr('checked'): " + $("input").attr('checked')
+					  + "<br>prop('checked'): " + $("input").prop('checked'));
+	});
+});
+//语法
+//返回属性的值：
+//$(selector).prop(property)
+//设置属性和值：
+//$(selector).prop(property,value)
+//使用函数设置属性和值：
+//$(selector).prop(property,function(index,currentvalue))
+//设置多个属性和值：
+//$(selector).prop({property:value, property:value,...})
+</script>
+</head>
+<body>
+	<h2><a href="index.html">返回</a></h2>
+		<br />
+		<br />
+		<br />
+
+<p><b>注意:</b>确认或取消选中该复选框,然后单击按钮刷新内容。</p>
+<button>查看attr() 和 prop() 的值</button>
+<br><br>
+<input id="check1" type="checkbox" checked="checked">
+<label for="check1">Check me</label>
+<p id="p1"></p>
+
+</body>

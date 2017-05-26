@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div>
+			<h2>按钮全选和不全选</h2>
+			<label>
+				<input type="checkbox" id="btn"/>
+				<span>全选</span>
+			</label>
+			<br />
+			<input type="checkbox" name="ck" />
+			<input type="checkbox" name="ck" />
+			<input type="checkbox" name="ck" />
+			<input type="checkbox" name="ck" />
+			<input type="checkbox" name="ck" />
+			<input type="checkbox" name="ck" />
+		</div>
+	</body>
+	<script>
+		var btn=document.getElementById("btn");
+		var aspan=document.getElementsByTagName("span")[0];
+		var inp=document.getElementsByName("ck");
+		btn.onclick=function(){
+			for (var i=0;i<inp.length;i++) {
+				if (btn.checked) {
+					inp[i].checked=true;
+					aspan.innerHTML="全不选";
+				} else{
+					inp[i].checked=false;
+					aspan.innerHTML="全选";
+				}
+			}
+		}
+		
+		
+	</script>
+</html>

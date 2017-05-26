@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+	</head>
+	<body>
+		<h2><a href="index.html">返回</a></h2>
+		<div>
+			
+		</div>
+		<input type="checkbox" id="cr"/><label for="cr">选择框</label>
+		<span style="color: red;"></span>
+	</body>
+	<script>
+		$(function(){
+			//在后面追加信息
+			$("div").append("<img src='img/11.png'><br /><a href='index.html'>返回</a><br /><ul><li>123</li><li>456</li></ul>")
+			//在前面追加信息
+//			$("div").prepend("<img src='img/11.png'><br /><a href='index.html'>返回</a><br /><ul><li>123</li><li>456</li></ul>")
+			$("#cr").click(function(){
+				//is的简单的用法
+//					语法     .is(selector)
+//					参数      selector 	  字符串值，包含匹配元素的选择器表达式。
+				var chk=$("#cr");
+				if (chk.is(":checked")) {
+					//这里的is()括号中的内容写的其实是选择器的内容
+					$("span").html("该复选框被选择了");
+				} else{
+					$("span").html("您还没有勾选改复选框呢");
+				}
+			});
+			
+		});
+	</script>
+</html>

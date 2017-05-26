@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表单处理</title>
+		<script src="js/jquery.min.js"></script>
+		<style>
+			div{
+				width:500px;
+			}
+			input{
+				width: 300px;
+				height: 30px;
+				margin-left: 50px;
+				margin-top: 20px;
+				text-indent: 5px;
+			}
+			.sex input {  display: none; }
+			.selected {  background: red;  }
+			
+		</style>
+	</head>
+	<body>
+		<div class="div1">
+			<input placeholder="只能输入数字" class="input-1"/>
+		</div>
+		<div class="div2">
+			<input value="按钮" type="button" class="input-2"/>
+			<input type="checkbox"   name="ck" class="ckk"/>
+			<input type="checkbox"   name="ck" class="ckk"/>
+			<input type="checkbox"   name="ck" class="ckk"/>
+			<input type="checkbox"   name="ck" class="ckk"/>
+		</div>
+		<div class="div3">
+			<input value="按钮" type="button" class="input-3"/>
+			<input type="checkbox"   name="ck" class="ckk"/>
+			<input type="checkbox"   name="ck" class="ckk"/>
+			<input type="checkbox"   name="ck" class="ckk"/>
+			<input type="checkbox"   name="ck" class="ckk"/>
+		</div>
+		<div class="div4 sex">
+			<label for="sexx">
+				<input type="radio" class="input-4" id="sexx"/>
+				男
+			</label>
+		</div>
+	</body>
+	<script>
+//		只能输入数字(允许删除和退格)
+		$(".input-1").keydown(function(event) {    
+			// 允许退格和删除键
+		    if ( event.keyCode == 46 || event.keyCode == 8 ) {
+		    	console.log("你输入的是退格键或者删除键");
+		    }	
+		    else if(event.keyCode >= 48 && event.keyCode <= 57 ){        
+		    	// 保证输入的是数字键
+		   		console.log("你输入的是大键盘上的数字");
+		    }
+		    else if(event.keyCode >= 96 && event.keyCode <= 105 ){
+		    	console.log("你输入的是小键盘上的数字");
+		    }
+		    else{
+		    	event.preventDefault();
+		    }
+		    	
+		});
+		//全选
+		$(".input-2").click(function() {
+		   //固有属性使用prop，切记 
+		   $(".div2  input:checkbox").prop("checked",true);
+		});
+		//反选
+		$(".input-3").click(function() {
+		    $(".div3 input:checkbox").each(function () {
+		        $(this).prop("checked",!$(this).prop("checked"))
+		    })
+		});
+		//css，隐藏radio圆形，用label表示//实际使用中，样式写的好看一些
+		//单选框标签表示
+			$("input:radio").click(function () {
+			    $("input:radio").parent("label").removeClass("selected");
+			    $(this).parent("label").addClass("selected");
+			})
+//		还可输入多少字符提示
+		//第一个参数：总字符数//第二个参数：还可输入多少显示区对象
+		$.fn.limiter = function (limit, elem) {
+		    $(this).on("keyup focus", function () {
+		        setCount(this, elem);
+		    });   
+		    function setCount(src, elem) {
+		        var chars = src.value.length;       
+		        if (chars > limit) {
+		            src.value = src.value.substr(0, limit);
+		            chars = limit;
+		        }
+		        elem.html(limit - chars);
+		    }
+		    setCount($(this)[0], elem);
+		}
+		$("#title").limiter(3,$("#limit"));
+//		输入域显示缺省值
+		$('.default').each(function() {
+		    var $this = $(this);    var defaultVal = $this.attr('title');    if($this.val().length ==0) {
+		        $this.val(defaultVal);
+		    }
+		    $this.focus(function() {
+		        if ($this.val() === defaultVal) {
+		            $this.val('');
+		        }
+		    });
+		    $this.blur(function() {
+		        if ($this.val().length === 0) {
+		            $this.val(defaultVal);
+		        }
+		    });
+		});
+		//避免重复提交
+		$('form').submit(function() {
+		    if(typeof jQuery.data(this, "disabledOnSubmit") == 'undefined') {
+		        jQuery.data(this, "disabledOnSubmit", { submited: true });
+		        $('input[type=submit], input[type=button]', this).each(function() {
+		            $(this).attr("disabled", "disabled");
+		        });        return true;
+		    }   
+		    else{
+		            return false;
+		    }
+		});
+	</script>
+</html>

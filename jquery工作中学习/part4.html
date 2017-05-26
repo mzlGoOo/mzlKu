@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+		<style>
+			li{
+				background-color: red;
+				width: 50px;
+				height: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2><a href="index.html">返回</a></h2>
+		<button>按钮</button>
+		<input type="button" value="按钮2" />
+		<div>
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+		</div>
+	</body>
+	<script>
+		$(function(){
+			$("button").click(function(){
+				$("li").slideUp(2000);	
+			});
+			$("input").click(function(){
+				$("li").slideDown(3000);	
+			});
+		});
+	</script>
+</html>

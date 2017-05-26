@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			window.onload=function(){
+				var btn=document.getElementById("btn");
+				btn.onclick=function(){
+					var dat=document.getElementById("ipt");
+					var dt=dat.value;
+					//获取当前时间(多类)
+					dt= new Date();
+					dat.value=dt;
+					//***获取从1900年后到现在经历的年份
+					var dy=dt.getYear();
+//					dat.value=dy;
+					//获取当前年份
+					var dya=dt.getFullYear();
+//					dat.value=dya;
+					//获取当前月份
+					var dmo=dt.getMonth()+1;
+//					dat.value=dmo;
+					//获取当前星期
+					var dd=dt.getDay();
+//					dat.value=dd;
+					//获取当前小时
+					var dh=dt.getHours();
+//					dat.value=dh;
+					//获取当前分钟
+					var dmi=dt.getMinutes();
+//					dat.value=dmi;
+					//获取当前秒数
+					var ds=dt.getSeconds();
+//					dat.value=ds;
+					//***获取距 1970 年 1 月 1 日之间的毫秒数
+//					getTime() 方法可返回距 1970 年 1 月 1 日之间的毫秒数。
+					var dmm=(dt.getTime()+"毫秒 since 1970/01/01");
+//					dat.value=dmm;
+					//获取当前毫秒数
+					var dms=dt.getMilliseconds();
+//					dat.value=dms;
+					//获取世界时间
+					var dsj=dt.getTimezoneOffset();
+//					dat.value=dsj;
+				}
+			}
+
+		</script>
+
+	</head>
+	<body>
+		<br />
+		<br />
+		<br />
+		<br />
+		<h2><a href="index.html">返回</a></h2>
+		<br />
+		<br />
+		
+		<a href="http://www.w3school.com.cn/jsref/jsref_obj_date.asp">这里是详细介绍时间问题的</a>
+		<br />
+		<button id="btn">按钮</button>
+		<input type="text" id="ipt" style="width: 300px;" placeholder="这里显示内容"/>
+		<br />
+		<br />
+		<br />
+		<button onclick="startTime()">钟表时间</button>
+		<div style="border: 1px red solid;width: 80px;height: 30px;text-align: center;line-height: 30px;" id="txt"></div>
+	</body>
+	<script>
+			function startTime()
+				{
+					var mydate=new Date();     //定义总的时间
+					var h=mydate.getHours();   //定义小时
+					var m=mydate.getMinutes(); //定义分钟数
+					var s=mydate.getSeconds(); //定义秒数
+					
+//					checkTime()这是一个函数,这里引进了一个函数
+					//这里自定义了分钟和秒数，因为小时采用24小时计算法就不存在单位数，所以不用定义
+					m=checkTime(m);
+					s=checkTime(s);
+					document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+					//setTimeout() 方法用于在指定的毫秒数后调用函数或计算表达式。
+//					这里指的是引用函数startTime()的时间,只要是这个引用(刷新)时间小于1000毫秒就可以执行下去
+//					简单的说就是这里规定调用此函数需要的时间
+					setTimeout('startTime()',500);
+				}
+				// add a zero in front of numbers<10(这里的意思是保证时，分，秒的数字为两位数)
+//				当分钟和秒钟是个位数的时候，也统一为0x来显示
+				function checkTime(i)
+				{
+				if (i<10) 
+				  {i="0" + i};
+				  //小于10的数字前面加一个0
+				  return i;
+				}
+			
+	</script>
+		<div id="text-num" style="width: 200px;"></div>
+		<button id="btn-text">按钮</button>
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script>
+		$(function(){
+			var i=0;
+//			while (i<=100){
+//				$("#text-num").before('&nbsp;'+i);
+//				i++;
+//			}
+			
+			for(i=0;i<=100;i++){
+				$("#text-num").append('&nbsp;'+i);
+			}
+		});
+	</script>
+	
+</html>

@@ -1,0 +1,61 @@
+
+.num0 ul{
+	overflow: hidden;
+	width: 3rem;
+}
+.num0{
+	overflow: hidden;
+}
+.num0 ul li{
+	float: left;
+	color: #333333;
+	font-size: 0.12rem;
+	width: 0.5rem;
+	text-align: center;
+	line-height: 0.2rem;
+	cursor: pointer;
+}
+.num0 ul li :hover{
+	color:#3385ff;
+}
+.num0 p input{
+	display: inline-block;
+	float: left;
+	width:1.6rem;
+	height: 0.25rem;
+	text-indent: 0.05rem;
+}
+.num0 p{
+	width: 2.3rem;
+	margin: 0 auto;
+	margin-top: 0.3rem;
+}
+.num0 p a{
+	display: block;
+	margin: 0 auto;
+	width: 0.7rem;
+	margin-bottom: 0.2rem;
+}
+.num0 p a img{
+	margin: 0 auto;
+	width: 0.5rem;
+	height: 0.3rem;
+}
+.num0 p button{
+	float: right;
+	width: 0.7rem;
+	color: white;
+	background: #3385ff;
+	font-size: 0.12rem;
+	text-align: center;
+	height: 0.25rem;
+	line-height: 0.25rem;
+} 
+
+
+
+
+
+
+
+

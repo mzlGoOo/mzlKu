@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		.div1{
+			border: 1px red solid;
+		}
+			p{
+				background:yellowgreen;
+				color: white;
+				width: 300px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<h2><a href="index.html">返回</a></h2>
+		<br />
+		<br />
+		<br />
+		<button>克隆(复制)按钮</button>
+		<div class="div1">
+			<p>我是div里面的内容1</p>
+			<p>我是div里面的内容2</p>
+			<p>我是div里面的内容3</p>
+			<p>我是div里面的内容4</p>
+			<p>我是div里面的内容5</p>
+		</div>
+		<div class="div2"></div>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script>
+		$(function(){
+			$("button").click(function(){
+				$(".div1").clone().insertAfter(".div2");
+//				insertAfter() 方法在被选元素之后插入 HTML 标记或已有的元素。
+//              .clone()复制前面class为div1的内容
+			});
+		});
+	</script>
+</html>

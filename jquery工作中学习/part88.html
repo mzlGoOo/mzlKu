@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.div-one{
+				border: 1px red solid;
+				width: 300px;
+				height: 100px;
+				background: red;
+			}
+			.div-one1{
+				width: calc(50% - 50px);
+				/*这里的calc简单的说就是一个提供算法的属性
+				即宽度为(300*0.5-50)=100px*/
+				height: 100%;
+				background: yellow;
+				border: 2px black solid;
+			}
+			
+			
+			
+			
+			.div1{
+				border: 1px red solid;
+				width:calc(80% - 50px);
+			}
+			.div2:hover{
+				background: lawngreen;
+			}
+			.div3:hover{
+				background:darkcyan;
+			}
+			.div4:hover{
+				background: green;
+			}
+			.div5:hover{
+				background:crimson;
+			}
+			.div6:hover{
+				background: mediumslateblue;
+			}
+			.div2{
+				width: 100px;
+				height: 100px;
+				border: 1px gainsboro solid;
+				float: left;
+				transition: background-color 0.5s ease-in 0.1s;
+			}
+			.div3{
+				width: 100px;
+				height: 100px;
+				border: 1px gainsboro solid;
+				float: left;
+				transition: background-color 0.5s ease-in 0.1s; 
+			}
+			.div4{
+				width: 100px;
+				height: 100px;
+				border: 1px gainsboro solid;
+				float: left;
+				transition: background-color 0.5s ease-in 0.1s;
+			}
+			.div5{
+				width: 100px;
+				height: 100px;
+				border: 1px gainsboro solid;
+				float: left;
+				transition: background-color 0.5s ease-in 0.1s;
+			}
+			.div6{
+				width: 100px;
+				height: 100px;
+				border: 1px gainsboro solid;
+				float: left;
+				transition: background-color 0.5s ease-in 0.1s;
+			}
+		</style>
+	</head>
+	<body>
+		<h2><a href="index.html">返回</a></h2>
+		<br />
+		<br />
+		<!--calc()的具体解释-->
+		<!--calc()从字面我们可以把他理解为一个函数function。
+		其实calc是英文单词calculate(计算)的缩写，是css3的一个新增的功能，
+		用来指定元素的长度。比如说，你可以使用calc()给元素的border、margin、pading、font-size和width等属性设置动态值。
+		为何说是动态值呢?因为我们使用的表达式来得到的值。不过calc()最大的好处就是用在流体布局上，可以通过calc()计算得到元素的宽度。-->
+		calc()的具体运用
+		<div class="div-one">
+			<div class="div-one1">
+				这个div就是calc起作用的部分
+			</div>
+		</div>
+		<!--下面显示的是transition的样式-->
+		<img src="img/QQ图片20161027101957.png" />
+		<div class="div2"></div>
+		<div class="div3"></div>
+		<div class="div4"></div>
+		<div class="div5"></div>
+		<div class="div6"></div>
+	</body>
+</html>

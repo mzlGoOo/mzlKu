@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.btn1,.btn2{
+				color: red;
+				font-size: 20px;
+				cursor: pointer;
+			}
+			/*以下是操作弹窗的必要CSS*/
+			.beijing{
+				font-family: "微软雅黑";
+				font-size: 14px;
+			  	display: none;
+			  	position:fixed;left:0;top: 0;right: 0;bottom: 0;
+			  	background: rgba(0,0,0,.5);
+			  	z-index: 999;
+			}
+			.tanchuang{
+				width: 700PX;
+				height: 450PX;
+				/*border: 1PX solid red;*/
+				background: #FFFFFF;
+				position: absolute;left: 50%;top: 50%;
+				-webkit-transform: translate3d(-50%,-50%,0);
+				-ms-transform: translate3d(-50%,-50%,0);
+				-moz-transform: translate3d(-50%,-50%,0);
+				transform: translate3d(-50%,-50%,0);
+			    -webkit-box-shadow:0 0 10px rgba(0, 204, 204, .5);  
+			    -moz-box-shadow:0 0 10px rgba(0, 0, 0, .5);  
+			    box-shadow:0 0 10px rgba(0, 0, 0, .5); 
+
+			}
+		</style>
+	</head>
+	<body>
+		<h2><a href="index.html">返回</a></h2>
+		<br />
+		<br />
+		<br />
+		<a class="btn1">点击之后弹窗</a>
+		<br />
+		
+		<div class="beijing" >
+			<!--这个div指的是拥有遮罩层的框-->
+			<div class="tanchuang">
+				<!--这个div是指的单纯的弹窗-->
+				<a class="btn2">关闭弹窗(这里的关闭弹窗实则是隐藏)</a>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script>
+		$(function(){
+			$(".btn1").click(function(){
+				$(".beijing").show();
+			});
+			$(".btn2").click(function(){
+				$(".beijing").hide();
+			});
+		});
+	</script>
+</html>
