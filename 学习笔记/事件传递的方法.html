@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>事件传递的方法</title>
+		<style>
+			div{
+				width: 500px;
+				height: 300px;
+				overflow: hidden;
+				background: cadetblue;
+				border: 1px red solid;
+				margin: 50px;
+			}
+			p{
+				width: 500px;
+				height: 100px;
+				margin: 100px 0 100px 0;
+				background: darkcyan;
+				line-height: 100px;
+				text-align: center;
+			}
+			ul{
+				border: 1px red solid;
+			}
+			li{
+				height: 30px;
+				border: 1px black solid;
+			}
+		</style>
+	</head>
+	<body>
+		<button>调用getTag()函数的例子</button>
+		<div id="div1">
+			<p id="p1">这里是p1区域</p>
+		</div>
+		<div id="div2">
+			<p id="p2">这里是p1区域</p>
+		</div>
+		<!--事件委托-->
+		<!--最简单的例子来体现事件委托特性-->
+		<div id="div3">
+			<ul id="uil">
+				<li>这里是每一个li标签</li>
+				<li>这里是每一个li标签</li>
+				<li>这里是每一个li标签</li>
+				<li>这里是每一个li标签</li>
+				<li>这里是每一个li标签</li>
+				<li>这里是每一个li标签</li>
+				<li>这里是每一个li标签</li>
+				<li>这里是每一个li标签</li>
+				<li>这里是每一个li标签</li>
+				<li>这里是每一个li标签</li>
+			</ul>
+		</div>
+	</body>
+	<script>
+		//这里是将getElementByTagName()这个方法赋给了getTag()这个函数上
+		//eg:
+		function getTag(e){
+			return document.getElementsByTagName(e)[0];
+		}
+		var btn=getTag("button");
+		btn.onclick=function(){
+			alert("oh!yes");
+		}
+		//事件冒泡(先执行的是里面的在执行外面的)
+//		事件冒泡的addEventListener的第三个值是默认值false
+		var div1=document.getElementById("div1");
+		div1.addEventListener("click",function(event){
+			alert("你点击的是div1");
+		},false)
+		
+		var p1=document.getElementById("p1");
+		p1.addEventListener("click",function(event){
+			alert("你点击的是p1");
+//			event.stopPropagation();
+			//这里是阻止冒泡事件的方法(意思是从这开始就不冒泡了)所以p1的上一层div1就不执行了
+		},false)
+		//事件捕获(先执行外面的在执行里面的)
+//		事件捕获的addEventListener的第三个值是true
+		var div2=document.getElementById("div2");
+		div2.addEventListener("click",function(event){
+			alert("你点击的是div2");
+		},true)
+
+		var p2=document.getElementById("p2");
+		p2.addEventListener("click",function(event){
+			alert("你点击的是p2");
+		},true)
+		//事件委托
+//		事件委托就是利用事件冒泡，只指定一个事件处理程序，就可以管理某一类型的所有事件。
+//		用事件委托，就会将所有的操作放到js程序里面，与dom的操作就只需要交互一次，这样就能大大的减少与dom的交互次数，提高性能；
+//		具体参考http://www.cnblogs.com/liugang-vip/p/5616484.html
+		var uil=document.getElementById("uil");
+		uil.onclick=function(event){
+//Event对象提供了一个属性叫target，可以返回事件的目标节点，我们成为事件源，也就是说
+//target就可以表示为当前的事件操作的dom，但是不是真正操作dom，
+//当然，这个是有兼容性的，标准浏览器用ev.target，IE浏览器用event.srcElement，此时只是获取了当前节点的位置，并不知道是什么节点名称，这里我们用nodeName来获取具体是什么标签名，这个返回的是一个大写的，我们需要转成小写再做比较（习惯问题）
+//			这里其实是在调整一下浏览器的兼容问题
+			ev=event||window.event;
+			var target=ev.target||ev.srcElement;
+//			target获取事件元素
+//			target.nodeName  这里输出的是大写的li名称
+			if(target.nodeName||target.nodeName.toLowerCase()==li){
+				target.style.background="red";
+			}
+//			
+		}
+		
+	</script>
+</html>
+
+
+
+

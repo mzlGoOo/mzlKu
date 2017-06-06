@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>创建并增加新的html元素</title>
+	</head>
+	<body>
+		<div id="demo">
+			<p>这个是已有的p标签</p>
+			<p>这个是已有的p标签</p>
+			<p>这个是已有的p标签</p>
+		</div>
+		<button>按钮</button>
+	</body>
+	<script>
+		var btn=document.getElementsByTagName("button");
+		btn[0].onclick=function(){
+			var newp=document.createElement("p");
+			var newtext=document.createTextNode("这个是新创建的p标签");
+			newp.appendChild(newtext);
+			var divall=document.getElementById("demo");
+			divall.appendChild(newp);
+		}
+	</script>
+</html>

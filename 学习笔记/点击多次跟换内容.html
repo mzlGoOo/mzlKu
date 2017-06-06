@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>点击多次跟换内容</title>
+	</head>
+	<body>
+		<div style="background-color:#D94A38;width:170px;height:80px;margin:20px;padding-top:20px;color:#ffffff;font-weight:bold;font-size:18px;float:left;text-align:center;" onclick="clickMeEvent(this)">Click Me</div>
+	</body>
+	<script type="text/javascript">
+		function clickMeEvent(obj) {
+			if (obj.innerHTML == "Goodbye") {
+				obj.style.display = "none";
+			} else if (obj.innerHTML == "Thank You") {
+				obj.innerHTML = "Goodbye";
+			} else if (obj.innerHTML == "Click Me<br>Click Me Again<br>And Again") {
+				obj.innerHTML = "Thank You";
+			} else if (obj.innerHTML == "Click Me<br>Click Me Again") {
+				obj.innerHTML = obj.innerHTML + "<br>And Again";
+			} else {
+				obj.innerHTML = obj.innerHTML +"<br>Click Me Again";
+				}
+			}
+	</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>设置参数的默认值</title>
+	</head>
+	<body>
+		<button>按钮</button>
+		<button>按钮</button>
+		<p id="demo">这里显示结果<span></span></p>
+		<p id="demo1">这里显示结果<span></span></p>
+	</body>
+	<script>
+	 	var btn=document.getElementsByTagName("button")[0];
+	 	var pmain=document.getElementById("demo");
+	 	var spanmain=pmain.getElementsByTagName("span")[0];
+	 	var btn1=document.getElementsByTagName("button")[1];
+	 	var pmain1=document.getElementById("demo1");
+	 	var spanmain1=pmain1.getElementsByTagName("span")[0];
+	 	btn.onclick=maintext();
+	 	btn1.onclick=maintext1();
+//	 	第一种方法
+	 	function maintext(x,y){
+	 		//这里设置了参数y的默认值为2(因为下面的maintext只传了一个参数，所以y的值是undefined,所以在这规定了y的值为2);
+	 		if(y==undefined){
+	 			y=2;
+	 		}
+	 		return x*y;
+	 	}
+	 	spanmain.innerHTML=maintext(3);
+//		第二种方法
+		function maintext1(x,y){
+//			这里直接规定了y的值
+			y=y||2;
+			return x*y;
+		}
+		spanmain1.innerHTML=maintext1(3);
+		
+	</script>
+</html>

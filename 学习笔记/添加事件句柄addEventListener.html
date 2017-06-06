@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>添加事件句柄addEventListener</title>
+		<style>
+			p{
+				width: 300px;
+				height: 50px;
+				border: 1px red solid;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="demo1">这里是demo1</p>
+		<div style="width: 300px;height: 50px;border: 1px black solid;" id="demo2"></div>
+	</body>
+	<script>
+		var demo1=document.getElementById("demo1");
+		var demo2=document.getElementById("demo2");
+		demo1.addEventListener("click",fun1);
+		demo1.addEventListener("dblclick",fun2);
+		demo1.addEventListener("mouseover",fun3);
+		demo1.addEventListener("mouseout",fun4);
+		demo2.addEventListener("click",fun7);
+		//当然也能传递参数和函数
+		var p1=2;
+		var p2=3;
+		demo1.addEventListener("click",function(){
+			myfunction(p1,p2);
+			//这里调用的是下面那个函数
+		});
+		function myfunction(a,b){
+			var resul=a*b;
+			document.getElementById("demo2").innerHTML=resul;
+		}
+		
+		
+		function fun1(){
+			alert("click");
+		}
+		function fun2(){
+			alert("dbclick");
+		}
+		function fun3(){
+			alert("mouseover");
+		}
+		function fun4(){
+			alert("mouseout");
+		}
+		//向window添加句柄
+		window.addEventListener("resize",fun5);
+		//resize是表示浏览器窗口变化事件
+		function fun5(){
+			document.getElementById("demo2").innerHTML=Math.random();
+			//Math.random()获取0.0~1.0之间的一个随机数
+			
+		}
+		function fun7(){
+//			这实现的思路是将hex的最大值ffffff先转换为10进制，进行random后再转换回16进制。
+			var colorbian='#'+Math.floor(Math.random()*16777215).toString(16); 
+			console.log(colorbian);
+			document.getElementById("demo2").style.backgroundColor=colorbian;
+		}
+	</script>
+</html>

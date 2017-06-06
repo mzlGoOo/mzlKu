@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>arguments内置对象</title>
+	</head>
+	<body>
+		<p>这里是返回传入参数的个数<span id="demo" style="color: #f55e5e;"></span></p>
+	</body>
+	<script>
+		var sap=document.getElementById("demo");
+		function myfunction(){
+			return arguments.length;
+//			return arguments[0]; 这里返回的是第一个参数3
+		}
+		sap.innerHTML=myfunction(3,4);
+	</script>
+</html>

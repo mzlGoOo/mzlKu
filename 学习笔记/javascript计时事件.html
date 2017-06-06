@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>javascript计时事件</title>
+		<style>
+			div{
+				width: 200px;
+				/*height: 50px;*/
+				line-height: 25px;
+				border: 1px red solid;
+			}
+		</style>
+	</head>
+	<body>
+		<div><button style="border: none;"></button></div>
+		<div><button>clearInterval</button></div>
+		<div>
+			<button>setTimeout</button>
+			<p id="pp">点击按钮后，3秒出现内容</p>
+		</div>
+		<div>
+			<button>clearTimeout</button>
+			<p>你必须在点击setTimeout按钮后的3秒内点击这个按钮</p>
+		</div>
+	</body>
+	<script>
+		(function(){
+			var div=document.getElementsByTagName("div");
+			var btn=document.getElementsByTagName("button");
+			var div1=div[0];
+			var div2=div[1];
+			var div3=div[2];
+			var div4=div[3];
+			
+			var btn1=btn[0];			
+			var btn2=btn[1];			
+			var btn3=btn[2];
+			var btn4=btn[3];
+			
+			//获取本地时间
+			var mytime=setInterval(function(){fun1()},500);//必须放在后面调用
+			function fun1(){
+				var tim=new Date();
+				//第一种办法
+//				var H=tim.getHours();
+//				var M=tim.getMinutes();
+//				var S=tim.getSeconds();
+//				M=checkTime(M);
+//				S=checkTime(S);
+//				div1.innerHTML=H+":"+M+":"+S;
+//				setInterval(function(){fun1()},500);//必须放在后面调用
+				//第二种方法
+				var timNow=tim.toLocaleTimeString();//toLocaleTimeString()直接将时间规范形式
+				div1.innerHTML=timNow;
+//				var mytime=setInterval(function(){fun1()},500);//必须放在后面调用
+			}
+				
+			//这里是规范单个数字
+//			function checkTime(e){
+//				if(e<10){
+//					e="0"+e;
+//				}
+//				return e;
+//			}
+			//clearInterval清除了setInterval事件，所以停止执行了
+			btn2.onclick=function(){
+				clearInterval(mytime);
+			}
+			
+			//setTimeout指的是多长时间后执行
+			var pp=document.getElementById("pp");
+			var mytime1;
+			btn3.onclick=function(){
+				mytime1=setTimeout(function(){
+					pp.innerHTML="这里的内容已经换了";
+				},3000);
+			}
+			//clearTimeout清除
+			btn4.onclick=function(){
+				clearTimeout(mytime1);
+			}
+		})();
+	</script>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>弹窗</title>
+	</head>
+	<body>
+		<div id="div1">
+			<button>alert</button>
+		</div>
+		<div id="div2">
+			<button>confirm</button>
+			<p id="p2"></p>
+		</div>
+		<div id="div3">
+			<button>prompt</button>
+			<p id="p3"></p>
+		</div>
+		
+	</body>
+	<script>
+		(function(){
+			var div1=document.getElementById("div1");
+			var div2=document.getElementById("div2");
+			var div3=document.getElementById("div3");
+			
+			var btn=document.getElementsByTagName("button");
+			var btn1=btn[0];
+			var btn2=btn[1];
+			var btn3=btn[2];
+			
+			btn1.onclick=function(){
+				alert("你好\n这是警告弹窗");
+				//  \n是实现换行功能
+			}
+			btn2.onclick=function(){
+				var x;
+				var r=confirm("这是确认弹窗");
+				if (r==true) {
+					x="你点击了确认按钮";
+				} else{
+					x="你点击了取消按钮";
+				}
+				var p2=document.getElementById("p2");
+				p2.innerHTML=x;
+			}
+			btn3.onclick=function(){
+				var y;
+				//prompt(text,defaultText)
+					//text  可选，这个文字是在弹出框显示的文字
+					//defaultText   可选，这个文字是默认的输入框的文字(类似placeholder)
+				var person=prompt("请你输入你的名字","MIZONGLIANG");
+				if(person!=null&&person!=""){
+					y="您好，"+person+"，今天工作怎么样";
+				}
+				var p3=document.getElementById("p3");
+				p3.innerHTML=y;
+			}
+		})()
+	</script>
+</html>

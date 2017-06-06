@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>for  in</title>
+	</head>
+	<body>
+		<div>
+			<p id="demomain"></p>
+		</div>
+	</body>
+	<script>
+		var mainP=document.getElementById("demomain");
+		var mainPmain={name:"mzl",sex:"man",age:"23"};
+		var emptymain="";
+		for(x in mainPmain){
+			emptymain+=mainPmain[x]+"<br>";
+			console.log(emptymain);
+		}
+		mainP.innerHTML=emptymain;
+	</script>
+</html>

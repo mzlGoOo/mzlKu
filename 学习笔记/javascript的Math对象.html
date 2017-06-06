@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>javascript的Math对象</title>
+		<style>
+			span{
+				color: red;
+				margin-left: 20px;
+			}
+			p{
+				border: 1px red solid;
+				height: 50px;
+				width:1300px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="demo">
+			<h2>一些Math的方法</h2>
+			<p id="p1">2.5<span></span></p>
+			<p id="p2">2.5<span></span></p>
+			<p id="p3">2.5<span></span></p>
+			<p id="p4">2.5<span></span></p>
+			<p id="p5"><span></span></p>
+			<p id="p6"></p>
+			<p id="p7"></p>
+			<p id="p8">
+				<a href="http://www.baidu.com">点击我跳转链接</a>
+				<button id="btn8">按钮</button>
+			</p>
+		</div>
+	</body>
+	<script>
+		var demo=document.getElementById("demo1");
+		var span=document.getElementsByTagName("span");
+		var p1=document.getElementById("p1");
+		var p2=document.getElementById("p2");
+		var p3=document.getElementById("p3");
+		var p4=document.getElementById("p4");
+		var p5=document.getElementById("p5");
+		var p6=document.getElementById("p6");
+		var p7=document.getElementById("p7");
+		var p8=document.getElementById("p8");
+		(function(){
+			var np1=parseFloat(p1.innerHTML);
+			var np2=parseFloat(p2.innerHTML);
+			var np3=parseFloat(p3.innerHTML);
+			var np4=parseFloat(p4.innerHTML);
+			var np5=parseFloat(p5.innerHTML);
+			
+			var changep1=Math.round(np1);//四舍五入
+			var changep2=Math.ceil(np2);//向上去整
+			var changep3=Math.floor(np3);//向下去整
+			var changep4=Math.random();//随机数
+			var changep5=Math.max(2,2.5);//最大数(这里只能输入两个数字)
+			var changep5=Math.min(2,5);//最小数(这里只能输入两个数字)
+			
+			span[0].innerHTML=changep1;
+			span[1].innerHTML=changep2;
+			span[2].innerHTML=changep3;
+			span[3].innerHTML=changep4;
+			span[4].innerHTML=changep5;
+			
+			//这里显示的是可用的屏幕宽度
+			p6.innerHTML=window.screen.availWidth;
+			//获取当前也面的地址(url)
+			p7.innerHTML=window.location;
+			//获取对象包含浏览器的历史
+//			history.back()是返回历史列表的第一个url
+			var btn8=document.getElementById("btn8");
+			btn8.onclick=function(){
+				window.history.back();
+//				p8.innerHTML=window.history.forward();
+			}
+//			
+		})()
+	</script>
+</html>
