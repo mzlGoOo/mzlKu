@@ -1,0 +1,25 @@
+{
+	"index.html": {
+		"resources": [
+			"images/oni.png",
+			"css/reply.css",
+			"html/one.html",
+			"images/innu.png",
+			"js/jquery-3.1.0.min.js"
+		],
+		"refer": [
+			"html/one.html"
+		]
+	},
+	"html/one.html": {
+		"resources": [
+			"images/back.png",
+			"images/link-arrow.png",
+			"js/jquery.area.js",
+			"images/shape.png",
+			"images/close-area.png",
+			"css/stylereply.css",
+			"images/xx.png"
+		]
+	}
+}

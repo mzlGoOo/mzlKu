@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>马上提问</title>
+    <link rel="stylesheet" href="../css/reply.css">
+    <script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
+    <style>
+        .whole .pa{ line-height: 2.7rem; padding-left: 7%;}
+        .whole .nav{ margin: .6rem 0 0 7%;}
+        .whole .nav .img01{ margin-top: .8rem;}
+        .whole .nav .img01 input{height: 1.4rem; width: 60%;border: .04rem solid #CCCCCC; border-radius: .3rem; padding-left: 2%;}
+        .whole .nav .po{ margin-top: .8rem;}
+        .whole .nav .text{ border: .04rem solid #CCCCCC; border-radius: .3rem; width: 71%; margin-top: .6rem;height: 1.4rem; padding-left: 3%; line-height:1.4rem; }
+        .whole .nav .texta{ border: .04rem solid #CCCCCC; border-radius: .3rem; width: 90%; margin-top: .6rem;height: 20rem;}
+        .whole .nav .pk{ color: #b1b1b1; margin-left: 40%;}
+        .whole .makeg{ width: 100%; height: 100%; background: rgba(196,196,196,.7); position: fixed; top: 0; left: 0;z-index: 5; display: none;}
+        .whole .makeg .makeg-a{ width: 52%; height: 14.5rem; position: absolute; background: #ffffff;z-index: 6; top: 12rem; left: 25%; border-radius: .8rem;}
+        .whole .makeg .imgt{ width: 48%; height: 6.75rem; margin: 1.2rem 0 0 25%; }
+        .whole .makeg .imgs{ position: absolute; right: 4%; top: .4rem; width: 10%; height: 1.1rem;}
+        .whole .makeg .ki{ text-align: center; margin-top: 1rem;}
+        .whole .bottom{ width: 100%; height: 2.6rem; position: fixed; left: 0;bottom: 0;}
+        .whole .bottom .nina{ width: 89%; height: 2.2rem; margin: .2rem auto; text-align: center; display: block; background: #00a0e9; color: #ffffff; line-height: 2.2rem; border-radius: .3rem;}
+
+        /*文字*/
+        .foa{ font-size:.64rem;}/*18px*/
+        .fob{ font-size:.86rem;}/*24px*/
+        .foc{ font-size:.71rem;}/*20px*/
+
+        .cbo{ color: #b1b1b1;}
+        .cda{ color: #143452;}
+
+        .dis{display: block;}
+        .bor{border-top: .04rem solid #CCCCCC;border-bottom: .04rem solid #CCCCCC;}
+        .bac{ background: #eeeeee}
+    </style>
+</head>
+<body>
+    <div class="whole">
+        <h4 class="fob pa bac">会员首次提问将享受免费服务</h4>
+        <div class="nav">
+            <div class="img01 foa">姓名：<input type="text" name="user" value="姓名" autocomplete="off"></div>
+            <div class="img01 foa">手机：<input type="text" name="password" value="手机号" autocomplete="off"></div>
+            <p class="foa po">请输入问题标题：</p>
+            <textarea class="text" name="desc" wrap=""></textarea>
+            <p class="foa po">描述您的问题：</p>
+            <textarea class="texta" name="desc" wrap=""></textarea>
+            <p class="foa pk">最少输入20字，最多输入300字</p>
+        </div>
+        <div class="bottom">
+            <a id="ton" class="nina">马上提问</a>
+        </div>
+        <div class="makeg">
+            <div class="makeg-a">
+                <img id="uin" src="../images/xx.png" class="imgs"/>
+                <img src="../images/shape.png" class="imgt"/>
+                <p class="foa ki">
+                    您的问题已经提交,请耐心等待!<br/>
+                    财税专家会在24小时内对<br/>
+                    您的问题进行解答！
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $("#ton").on("touchstart",function(){
+        $('.makeg').css("display","block");
+    });
+    $("#uin").on("touchstart",function(){
+        $('.makeg').css("display","none");
+    });
+</script>
+</html>

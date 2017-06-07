@@ -1,0 +1,109 @@
+{
+	"index.html": {
+		"resources": [
+			"images/man.png",
+			"images/logo.png",
+			"html/five.html",
+			"css/style.css",
+			"html/eight.html",
+			"html/six.html",
+			"html/nine.html",
+			"html/three.html",
+			"css/product.css"
+		],
+		"refer": [
+			"html/five.html",
+			"html/eight.html",
+			"html/six.html",
+			"html/nine.html",
+			"html/three.html"
+		]
+	},
+	"html/five.html": {
+		"resources": [
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"html/eight.html": {
+		"resources": [
+			"images/fh.png",
+			"images/x.png",
+			"images/logoo.png",
+			"js/jquery-3.1.0.min.js",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"html/nine.html": {
+		"resources": [
+			"index.html",
+			"images/fh.png",
+			"images/x.png",
+			"images/logoo.png",
+			"html/camp.html",
+			"js/jquery-3.1.0.min.js",
+			"html/cost.html",
+			"html/tax.html"
+		],
+		"refer": [
+			"index.html",
+			"html/camp.html",
+			"html/cost.html",
+			"html/tax.html"
+		]
+	},
+	"html/six.html": {
+		"resources": [
+			"index.html",
+			"images/fh.png",
+			"images/x.png",
+			"images/logoo.png",
+			"js/jquery-3.1.0.min.js"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"html/camp.html": {
+		"resources": [
+			"html/nine.html"
+		],
+		"refer": [
+			"html/nine.html"
+		]
+	},
+	"html/cost.html": {
+		"resources": [
+			"html/nine.html"
+		],
+		"refer": [
+			"html/nine.html"
+		]
+	},
+	"html/tax.html": {
+		"resources": [
+			"html/nine.html"
+		],
+		"refer": [
+			"html/nine.html"
+		]
+	},
+	"html/three.html": {
+		"resources": [
+			"images/fh.png",
+			"images/xin.png",
+			"images/x.png",
+			"images/logoo.png",
+			"js/jquery-3.1.0.min.js",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	}
+}

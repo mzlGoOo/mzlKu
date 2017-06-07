@@ -1,0 +1,98 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.choose-bg {
+	width: 100%;
+	/* height: 168rem; */
+    margin:0.625rem 0 0.625rem 0;
+    /*border: 0.0625rem #CCCCCC solid;*/ 
+}
+
+
+
+.choose-bg-text {
+	/*height: 105rem;*/
+	overflow: hidden;
+	width: auto;
+	margin: 0 auto;
+    /*border: 1px #E3E3E3 solid;*/
+}
+
+.choose-bg-text li {
+	list-style: none;
+	float: left;
+	text-align: center;
+	width: 4.69rem;
+	line-height: 1.5625rem;
+	font-size: 0.8rem;
+	color: #666666;
+	/*margin: 0 8rem 0 8rem;*/
+	cursor: pointer;
+    /*font-weight: 700;*/
+}
+.choose-bg-text li:hover{
+    color: #0098B3;
+}
+.choose-bg-text ul {
+	overflow: hidden;
+	float: left;
+	width: 100%;
+}
+
+.choose-bg-text p {
+	float: left;
+	width: 4.69rem;
+	text-align: center;
+	font-size:0.8rem;
+    color:#999999;
+    /*font-weight:700;*/
+	line-height: 1.5625rem;
+	/*padding-left: 0.3125rem;*/
+}
+
+
+
+@media only screen and (max-width: 768px), only screen and (max-device-width:768px) {
+	.choose-bg-text p {
+		padding-left: 0.5rem;
+	}
+}
+@media only screen and (max-width: 640px), only screen and (max-device-width:640px) {
+
+}
+@media only screen and (max-width: 420px), only screen and (max-device-width:420px) {
+   .choose-bg-text ul li{
+		width: 5rem;
+	}
+	.choose-bg-text p {
+		padding-left: 0.625rem;
+	}
+}
+@media only screen and (max-width: 375px), only screen and (max-device-width:375px) {
+   .choose-bg-text ul li{
+		width: 4.5rem;
+	}
+	.choose-bg-text p {
+		padding-left: 0.3125rem;
+	}
+}
+@media only screen and (max-width: 320px), only screen and (max-device-width:320px) {
+	.choose-bg-text ul li{
+		width: 3.8rem;
+	}
+	.choose-bg-text p {
+		padding-left: 0rem;
+	}
+	.well-a a{
+		font-size: 0.9375rem;
+	}
+}
+
+
+
+
+
+
+

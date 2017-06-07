@@ -1,0 +1,29 @@
+{
+	"index.html": {
+		"resources": [
+			"images/nav-a.png",
+			"images/nav-b.png",
+			"images/nav-d.png",
+			"images/print-a.png",
+			"html/make.html",
+			"css/public.css",
+			"images/nav-f.png",
+			"images/nav-c.png",
+			"js/jquery-3.1.0.min.js"
+		],
+		"refer": [
+			"html/make.html"
+		]
+	},
+	"html/make.html": {
+		"resources": [
+			"images/main_03.png",
+			"js/mobiscroll.2.13.2.js",
+			"images/shape.png",
+			"css/mobiscroll.2.13.2.css",
+			"images/xx.png",
+			"css/public.css",
+			"js/jquery-3.1.0.min.js"
+		]
+	}
+}

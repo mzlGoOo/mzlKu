@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="../css/personal.css">
+    <script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="../js/hdw.js"></script>
+</head>
+<body>
+    <div class="personal-login">
+        <form name="form">
+            <div class="login-heah">
+                <img src="../images/login-heah.png" class="img1 fl"/>
+                <input id="tel" class="login-heah-a fl" type="text" name="user" value="请输入手机号" autocomplete="off" onfocus="if (value =='请输入手机号'){value =''}" onblur="if (value ==''){value='请输入手机号'}">
+            </div>
+            <div class="login-heah">
+                <img src="../images/login-password.png" class="img1 fl"/>
+                <input id="password" type="password" name="pwd" class="login-heah-a fl" placeholder="请输入密码" autocomplete="off" onfocus="if (value =='请输入密码'){value =''}" onblur="if (value ==''){value='请输入密码'}">
+            </div>
+            <div class="login-heah">
+                <img src="../images/login-password.png" class="img1 fl"/>
+                <input id="passwords" type="password" name="pwd" class="login-heah-a fl" placeholder="请再次输入密码" autocomplete="off" onfocus="if (value =='请再次输入密码'){value =''}" onblur="if (value ==''){value='请再次输入密码'}">
+            </div>
+            <div class="login-heah">
+                <img src="../images/login-key.png" class="img1 fl"/>
+                <input class="login-heah-a fl" type="text" name="user" value="请输入验证码" autocomplete="off" onfocus="if (value =='请输入验证码'){value =''}" onblur="if (value ==''){value='请输入验证码'}">
+                <a class="heah-slip sizea colod">发送验证码</a>
+            </div>
+            <div class="login-keep sizea coloa" id="">
+                <input class="img1" type="checkbox" value="3" name="remeber" checked="checked">
+                <a>同意《注册协议》</a>
+            </div>
+            <div class="login coloc" id="send">立即注册<input type="button" value=""></div>
+        </form>
+        <div class="makega">
+            <div class="makeg-aa">
+                <img id="uinc" src="../images/x.png" class="imgsa"/>
+                <img src="../images/shape.png" class="imgta"/>
+                <a href="../index.html" class="foa kia coloc">立即登录</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    $('#uinc').click(function(){
+        $('.makega').fadeOut(200);
+        $('.makega').slideUp(300);
+    })
+</script>
+</html>

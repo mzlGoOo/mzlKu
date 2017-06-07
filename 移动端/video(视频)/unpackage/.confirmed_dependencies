@@ -1,0 +1,28 @@
+{
+	"index.html": {
+		"resources": [
+			"css/video.css",
+			"html/visual.html",
+			"images/video-heah-img.png",
+			"js/jquery-3.1.0.min.js"
+		],
+		"refer": [
+			"html/visual.html"
+		]
+	},
+	"html/visual.html": {
+		"resources": [
+			"media/Compress.MP4",
+			"js/willesPlay.js",
+			"css/willesPlay.css",
+			"images/control_01.png",
+			"images/web_ya.png",
+			"images/video-lv.png",
+			"js/jquery.cookie.js",
+			"images/web_yin.png",
+			"images/playheader.jpg",
+			"css/reset.css",
+			"images/txi.png"
+		]
+	}
+}

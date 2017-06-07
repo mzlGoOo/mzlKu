@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>企业财务系统状况自检</title>
+    <link rel="stylesheet" href="css/and.css">
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <style>
+        .sizea{ font-size: 1rem;}/*18*/
+        .sizec{ font-size: .64rem; line-height: 1.8rem;}/*18*/
+        .and-p{ line-height: 2.4rem;}
+        #button1{ border: .1rem solid #000000; border-radius: .2rem; width: 6rem; height: 2rem; background: #ffffff;}
+        .nin{ display: none; position: fixed; top: 0; left: 0; z-index: 3;  background: #ffffff; height: 100%;}
+    </style>
+</head>
+<body>
+    <div class="and">
+        <h3 class="yinb">扁鹊财学院</h3>
+        <p class="and-p sizea">企业税务情况评估表</p>
+        <div class="sizec">
+            <p>１. 公司是否聘请专业机构进行过税务规划？</p>
+            <input value="1" type="checkbox"/>是
+            <input value="2" type="checkbox"/>否
+        </div>
+        <div class="sizec">
+            <p>２. 您是否对公司的主要税种的税负率认真测算过？</p>
+            <input type="checkbox" value="3"/>是
+            <input type="checkbox" value="4"/>否
+        </div>
+        <div class="sizec">
+            <p>３. 公司在招聘会计人员时，是否测试其办税能力？</p>
+            <input type="checkbox" value="5"/>是
+            <input type="checkbox" value="6"/>否
+        </div>
+        <div class="sizec">
+            <p>４. 您所从事行业的相关税收优惠政策，是否了解？</p>
+            <input type="checkbox" value="7"/>是
+            <input type="checkbox" value="8"/>否
+        </div>
+        <div class="sizec">
+            <p>５. 公司是否对采购人员索要发票事项进行过培训？</p>
+            <input type="checkbox" value="9"/>是
+            <input type="checkbox" value="10"/>否
+        </div>
+        <div class="sizec">
+            <p>６. 对外签订相关经济合同是否考虑过对纳税影响？</p>
+            <input type="checkbox" value="11"/>是
+            <input type="checkbox" value="12"/>否
+        </div>
+        <div class="sizec">
+            <p>７. 租赁、融资、购房或投资是否考虑纳税的事项？</p>
+            <input type="checkbox" value="13"/>是
+            <input type="checkbox" value="14"/>否
+        </div>
+        <div class="sizec">
+            <p>８. 新业务发生时是否系统地咨询过相关财税专家？</p>
+            <input type="checkbox" value="15"/>是
+            <input type="checkbox" value="16"/>否
+        </div>
+        <div class="sizec">
+            <p>９. 新颁布的税收政策法规是否在30日内学习掌握？</p>
+            <input type="checkbox" value="17"/>是
+            <input type="checkbox" value="18"/>否
+        </div>
+        <div class="sizec">
+            <p>１0. 是否聘请过财税专家定期进行财税风险的诊断？</p>
+            <input type="checkbox" value="19"/>是
+            <input type="checkbox" value="20"/>否
+        </div>
+        <input type="button" name="button" id="button1" value="确认提交" class="content-i fl">
+    <div class="nin">
+        <p class="cin-a">1税负是需要管理的，不易出现太大波动，建议做一个近三年的企业上缴税费统计表。</p>
+        <p class="cin-b">2财务人员的办税能力非常重要，事先需要建立起良好的税企关系。</p>
+        <p class="cin-c">3建议让财务人员逐步建立起本行业的政策法规库。</p>
+        <p class="cin-d">4总经理、采购、销售、生产、物流、后勤等各业务部门都需要进行财务思维培训，让业务部门干部学会对利润和风险负责。</p>
+        <p class="cin-e">5合同是交易的书面表达，合同签订交易方式确定，建议签合同之前一定要让财务经理审合同。</p>
+        <p class="cin-f">6租赁、融资、购房或投资过程中容易出现重点财税风险，建议事前规划。</p>
+        <p class="cin-j">7合理合法少交税的最好办法就是重新设计交易方式，新业务发生前要提前请税务专家做好节水规划。</p>
+        <p class="cin-k">8建议让财务人员逐步建立起本行业的政策法规库。</p>
+        <p class="cin-p">9税务局来稽查时我们需要提前有预案，弄清为什么来、来查什么、怎么查以及查到怎么办？</p>
+        <p class="cin-o">10公司业务在不断发展，建议企业半年左右与财务专家进行财税诊断，不断完善系统，规避风险。</p>
+    </div>
+
+
+    </div>
+</body>
+<script>
+    //单选
+    $('input[type="checkbox"]').on('change', function() {
+        $(this).siblings('input[type="checkbox"]').prop('checked', false);
+    });
+    //判断
+    $('#button1').click(function(){
+        $('.nin').slideDown(300);
+    })
+    $(function(){
+        $("input[value='1']").click(function() {
+            $('.cin-a').css('display','none')
+        });
+    })
+    $(function(){
+        $("input[value='3']").click(function() {
+            $('.cin-b').css('display','none')
+        });
+    })
+    $(function(){
+        $("input[value='5']").click(function() {
+            $('.cin-c').css('display','none')
+        });
+    })
+    $(function(){
+        $("input[value='7']").click(function() {
+            $('.cin-d').css('display','none')
+        });
+    })
+    $(function(){
+        $("input[value='9']").click(function() {
+            $('.cin-e').css('display','none')
+        });
+    })
+    $(function(){
+        $("input[value='11']").click(function() {
+            $('.cin-f').css('display','none')
+        });
+    })
+    $(function(){
+        $("input[value='13']").click(function() {
+            $('.cin-j').css('display','none')
+        });
+    })
+    $(function(){
+        $("input[value='15']").click(function() {
+            $('.cin-k').css('display','none')
+        });
+    })
+    $(function(){
+        $("input[value='17']").click(function() {
+            $('.cin-p').css('display','none')
+        });
+    })
+    $(function(){
+        $("input[value='19']").click(function() {
+            $('.cin-o').css('display','none')
+        });
+    })
+</script>
+</html>

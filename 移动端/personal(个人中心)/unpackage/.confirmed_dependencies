@@ -1,0 +1,40 @@
+{
+	"index.html": {
+		"resources": [
+			"images/select-vip.png",
+			"images/select-e.png",
+			"images/select-d.png",
+			"images/select-c.png",
+			"js/personal.js",
+			"images/select-f.png",
+			"images/login-password.png",
+			"images/select-b.png",
+			"images/left-a.png",
+			"js/jquery-3.1.0.min.js",
+			"images/heah-fonts.png",
+			"images/select-a.png",
+			"images/login-heah.png",
+			"images/cap.jpg",
+			"css/personal.css",
+			"images/centre-heah.png",
+			"html/personal.html"
+		],
+		"refer": [
+			"html/personal.html"
+		]
+	},
+	"html/personal.html": {
+		"resources": [
+			"html/forget.html"
+		],
+		"refer": [
+			"html/forget.html"
+		]
+	},
+	"html/forget.html": {
+		"resources": [
+			"images/login-key.png",
+			"js/hdw.js"
+		]
+	}
+}

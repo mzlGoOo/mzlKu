@@ -1,0 +1,37 @@
+{
+	"index.html": {
+		"resources": [
+			"images/lun.png",
+			"css/style.css",
+			"images/tu08.png",
+			"images/tu04.png",
+			"js/jquery-3.1.0.min.js",
+			"css/bootstrap.css",
+			"images/tu02.png",
+			"images/tu07.png",
+			"images/tu10.png",
+			"images/tu01.png",
+			"js/bootstrap.min.js",
+			"images/tu06.png",
+			"images/tu05.png",
+			"images/tu9.png",
+			"images/tu03.png",
+			"js/index.js",
+			"images/tu12.png",
+			"images/tu11.png",
+			"images/tu13.png",
+			"images/tu14.png",
+			"images/tu15.png",
+			"images/tu16.png",
+			"html/public.html"
+		],
+		"refer": [
+			"html/public.html"
+		]
+	},
+	"html/public.html": {
+		"resources": [
+			"images/boss01.png"
+		]
+	}
+}
