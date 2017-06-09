@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media only screen and (max-width: 1400px), only screen and (max-device-width:1400px) {
+    .mediaone .containbanner img {
+        height: 5rem;
+    }
+    .mediaone .containbanner {
+        height: 5rem;
+    }
+}
+@media only screen and (max-width: 640px), only screen and (max-device-width:640px) {
+    .mediaone .contaiallll {
+        width: 266%;
+    }
+    .mediaone .containbanner img {
+        height: 4.6rem;
+    }
+    .mediaone .containbanner {
+        height: 4.6rem;
+    }
+    .mediaone .containpart4titlep1 {
+        margin-left: 3.1rem;
+    }
+    .mediaone .containpart4titlep2 {
+        margin-left: 3.8rem;
+    }
+    .mediaone .heada a {
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 375px), only screen and (max-device-width:375px) {
+    .containpartn1img1{
+        margin-left: 0.2rem;
+    }
+     .containpartn1img2{
+        margin-right: 0.2rem;
+    }
+    .containpartn1img2 img{
+        width:4rem;
+    }
+    .containpartn1text li{
+        margin: 0.2rem 0.3rem 0.2rem 0.9rem;
+    }
+    .containpart2text1right{
+        margin-right: 0.2rem;
+    }
+    .part8{
+        margin-left: 0.2rem;
+    }
+    .containpart9text2>ul{
+        margin-left: 0.2rem;
+    }
+    .containpart9text2>ul li{
+        width:0.94rem;
+        height: 0.94rem;
+    }
+}
+@media only screen and (max-width: 320px), only screen and (max-device-width:320px) {
+    .mediaone .contaiallll {
+        width: 312%;
+    }
+    .containpart2text1right{
+        margin-right: 0.2rem;
+    }
+    .containpartn1img1{
+        margin-left: 0.2rem;
+    }
+    .containpartn1img2{
+        margin-right: 0.2rem;
+    }
+    .containpartn1img2 img{
+        width:4rem;
+    }
+    .containpartn1text li{
+        margin: 0.2rem 0.3rem 0.2rem 0.9rem;
+    }
+    .mediaone .containpart4titlep1 {
+        margin-left: 2.9rem;
+    }
+    .mediaone .containpart4titlep2 {
+        margin-left: 3.6rem;
+    }
+    .part8{
+        margin-left: 0.2rem;
+    }
+    .containpart9text2>ul{
+        margin-left: 0.2rem;
+    }
+    .containpart9text2>ul li{
+        width:0.94rem;
+        height: 0.94rem;
+    }
+}
