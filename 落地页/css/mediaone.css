@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media only screen and (max-width: 1400px), only screen and (max-device-width:1400px) {
+    .mediaone .containbanner img {
+        height: 5rem;
+    }
+    .mediaone .containbanner {
+        height: 5rem;
+    }
+}
+@media only screen and (max-width: 640px), only screen and (max-device-width:640px) {
+    .mediaone .contaiallll {
+        width: 266%;
+    }
+    .mediaone .containbanner img {
+        height: 4.6rem;
+    }
+    .mediaone .containbanner {
+        height: 4.6rem;
+    }
+    .mediaone .containpart4titlep1 {
+        margin-left: 3.1rem;
+    }
+    .mediaone .containpart4titlep2 {
+        margin-left: 3.8rem;
+    }
+    .mediaone .heada a {
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 320px), only screen and (max-device-width:320px) {
+    .mediaone .contaiallll {
+        width: 312%;
+    }
+    .mediaone .containpart4titlep1 {
+        margin-left: 2.9rem;
+    }
+    .mediaone .containpart4titlep2 {
+        margin-left: 3.6rem;
+    }
+}

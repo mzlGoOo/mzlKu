@@ -1,0 +1,1328 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 100px;
+}
+li{
+	/*list-style: none;*/
+}
+a{
+	text-decoration: none;
+}
+body{
+	margin: 0 auto;
+}
+@font-face {
+	font-family:"fangsong";
+	src: url(../font/AD.OTF);
+}
+@font-face {
+	font-family:"qingyuan";
+	src: url(../font/qingyuan.TTC);
+}
+@font-face {
+	font-family:"hanyi";
+	src: url(../font/HY.TTF);
+}
+html, body {
+ height: 100%;
+}
+
+.contaiallll{
+	width: 100%;
+}
+.containall{
+	width: 100%;
+}
+/*头部*/
+.contain-head{
+	width: 100%;
+	height: 0.9rem;
+	margin: 0 auto;
+}
+.heada{
+	width: 10rem;
+	height:0.9rem;
+	line-height: 0.6rem;
+	margin: 10px auto 0 auto;
+	background: white;
+}
+.heada a{
+	width:1.7rem;
+	height: 0.7rem;
+	display: inline-block;
+	float: left;
+}
+.heada a img{
+	width: 1.5rem;
+	height: 0.6rem;
+}
+.headaspan1{
+	display: inline-block;
+	float: left;
+	height: 0.9rem;
+	line-height: 0.3rem;
+}
+.headaspan1 span{
+	display: inline-block;
+	font-family:"fangsong";
+	color: #008ddc;
+	font-size: 0.24rem;
+	height: 0.3rem;
+	margin-top: 0.3rem;
+	padding-left: 0.1rem;
+	border-left: 2px #8fa5b1 solid;
+}
+.headaspan2{
+	font-family:"fangsong";
+	color:#fe8f00;
+	font-size: 0.24rem;
+	float: right;
+	line-height: 0.9rem;
+	margin-right: 0.2rem;
+}
+/*banner*/
+.containbanner{
+	width: 100%;
+	height: 6rem;
+	margin: 0 auto;
+}
+.containbanner img{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	height: 6rem;
+}
+/*第一部分*/
+.containpart1{
+	height: 8.3rem;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	background-size:100% 100% ;
+	background: url(../img/img1background.png) center no-repeat;
+}
+.containpartcen{
+	width: 10rem;
+	margin: 0 auto;
+}
+.containpart1title{
+	font-size: 0.48rem;
+	margin: 0 auto;
+	height: 1.7rem;
+}
+
+.containpart1title p{
+	font-family:"qingyuan";
+	color: #8fa5b1;
+	font-size:0.48rem ;
+}
+.spanpro{
+	color:#008ddc ;
+}
+.spanres{
+	color: #fe8f00;
+}
+.containpart1titlep1{
+	margin-top: 0.35rem;
+	padding-left: 1.6rem;
+}
+.containpart1titlep2{
+	text-align: right;
+	padding-right: 1.6rem;
+}
+
+.containpart1img1{
+	margin: 0.5rem auto;
+}
+.containpart1img1 img{
+	display: block;
+	width: 4.73rem;
+	height: 3.4rem;
+	margin: 0 auto;
+}
+.containpart1img1text p{
+	font-size: 0.22rem;
+	line-height: 0.28rem;
+	color: #808080;
+	font-weight: bold;
+	position: relative;
+}
+.containpart1img1text{
+	height:0;
+}
+.containpart1img1text p span{
+	color: #00bcb0;
+}
+.containpart1img1text p{
+	display: none;
+}
+.imgtext1{
+	top:-3.3rem;
+	left: 2rem;
+}
+.imgtext2{
+	top: -2.6rem;
+	left: 1.7rem;
+}
+.imgtext3{
+	top: -1.8rem;
+	left: 1.8rem;
+}
+.imgtext4{
+	top: -5.15rem;
+	left:7.2rem;
+}
+.imgtext5{
+	top: -4.3rem;
+	left:7.5rem;
+}
+.imgtext6{
+	top: -3.6rem;
+	left: 7.5rem;
+}
+.commonalityBtn{
+	width: 4.9rem;
+	height: 0.55rem;
+	margin: 0 auto;
+	margin-top: 0.8rem;
+	border-radius: 0.5rem;
+	border: 2px #3dc6ff solid;
+}
+.commonalityBtn p a{
+	color: #8fa5b1;
+	display: block;
+	font-family:"qingyuan";
+	font-size: 0.25rem;
+	text-align: center;
+	line-height: 0.55rem;
+	cursor: pointer;
+}
+.commonalityBtn p a span{
+	color: #FE8F00;
+	font-size: 0.32rem;
+	font-weight: bold;
+}
+.zixuncaiwu{
+	color: #3dc6ff;
+	font-size: 0.24rem;
+	text-align: center;
+	margin: 0.2rem auto;
+}
+/*第二部分*/
+.containpart2{
+	height: 8.3rem;
+	width: 100%;
+	margin: 0 auto;
+	background-size:100% 100% ;
+	background-color: #e6f0f2;
+	overflow: hidden;
+}
+.containpart2title{
+	margin-top: 0.6rem;
+}
+.containpart2title p{
+	font-family: "qingyuan";
+}
+.containpart2titlep1{
+	font-size: 0.48rem;
+	color: #008DDC;
+	margin-left: 2.1rem;
+}
+.containpart2titlep2{
+	color: #8FA5B1;
+	font-size: 0.36rem;
+	margin-left: 2.5rem;
+}
+.containpart2titlep2 span{
+	color: #FE8F00;
+	font-size: 0.48rem;	
+	font-family: "qingyuan";
+}
+.containpart2text1{
+	/*border: 1px red solid;*/
+	height:3.3rem;
+	margin-top: 0.15rem;
+}
+.containpart2text1left{
+	float: left;
+}
+.containpart2text1right{
+	float: right;
+}
+.containpart2text1left>p{
+	color: #333;
+	font-size: 0.27rem;
+	font-family: "qingyuan";
+	margin: 0.3rem 0 0.5rem 1rem ;
+}
+.containpart2text1left ul li{
+	list-style: disc;
+}
+.containpart2text1left ul{
+	font-size: 0.2rem;
+	color: #808080;
+	margin-left: 0.5rem;
+}
+.containpart2text1left ul li p{
+	color: #808080;
+	font-size: 0.2rem;
+	font-family: "qingyuan";
+	line-height: 0.55rem;
+}
+.containpart2text1left ul li p span{
+	color: #FE8F00;
+	font-size: 0.3rem;
+	font-family: "qingyuan";
+}
+.containpart2text1right{
+	border: 2px #73bee7 dashed;
+	border-radius: 0.05rem;
+	height: 3.25rem;
+	width: 4.9rem;
+	
+}
+.containpart2text1right>p{
+	text-align: center;
+	margin: 0 auto;
+	width: 3.5rem;
+	color: #FE8F00;
+	line-height: 0.3rem;
+	font-size: 0.19rem;
+	font-family: "qingyuan";
+	height: 0.8rem;
+	margin-top: 0.25rem;
+}
+.kuai1{
+	border: 1px #FE8F00 dashed;
+	padding: 0.05rem;
+	margin:0.2rem 0.1rem 0.1rem 0.1rem;
+}
+.kuai1 p{
+	line-height: 0.2rem;
+	font-size: 0.12rem;
+	font-family: "qingyuan";
+	text-indent: 0.2rem;
+	color: #444;
+}
+.kuai2{
+	padding: 0.08rem;
+}
+.kuai2 p{
+	font-size: 0.14rem;
+	color: #444444;
+	font-family: "qingyuan";
+	text-indent: 0.2rem;
+	line-height: 0.25rem;
+}
+.containpart2text2{
+	width: 8.6rem;
+	margin: 0.3rem auto;
+}
+.containpart2text2 p{
+	color: #008DDC;
+	font-size: 0.2rem;
+	line-height: 0.35rem;
+	font-family: "qingyuan";
+}
+.containpart2text2 p span{
+	font-size: 0.28rem;
+	font-weight: bold;
+	color: #fe8f00;
+}
+/*第三部分*/
+.containpart3{
+	width: 100%;
+	margin: 0 auto;
+	height: 8.3rem;
+	overflow: hidden;
+	background-size:100% 100% ;
+	background: url(../img/img2.png) center no-repeat;
+	background-size: 100% 100%;
+}
+.containpart3title{
+	margin-top: 0.6rem;
+}
+.containpart3titlep1{
+	margin-left: 2.1rem;
+	color: #FFFFFF;
+	font-size: 0.48rem;
+	font-family: "qingyuan";
+	
+	
+} 
+.containpart3titlep2{
+	margin-left: 3.2rem;
+	color: #FFFFFF;
+	font-size: 0.48rem;
+	font-family: "qingyuan";
+}
+.containpart3titlep2 span{
+	color: #fff100;
+	font-weight: bolder!important;
+	-webkit-text-stroke: 0.005rem #7a7a7a;
+	font-size: 0.48rem;
+	font-family: "qingyuan";
+}
+.containpart3text1{
+	height: 4.0rem;
+	margin-top: 0.3rem;
+}
+.containpart3text1left{
+	float: left;
+}
+.containpart3text1left img{
+	width:4.0rem;
+	height: 3.5rem;
+}
+.containpart3text1right{
+	float: left;
+	border-radius: 0.05rem;
+	width: 5.04rem;
+	 -webkit-box-shadow:0 0 0.03rem 0.07rem #8cc3f0;  
+  	-moz-box-shadow:0 0 0.03rem 0.07rem #8cc3f0;  
+	  box-shadow:0 0 0.03rem 0.07rem #8cc3f0;  
+}
+.containpart3text1rightpart{
+	width: 2.5rem;
+	height: 1.7rem;
+	float: left;
+	margin: 0.01rem;
+	background: #a6d6fe;
+	cursor: pointer;
+}
+.qiequtitle{
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 0.2rem;
+	padding: 0.3rem 0.35rem 0 0.35rem;
+}
+.qiequtitle span{
+	color: #fcff00;
+}
+.qiequtext{
+	color: #00636f;
+	font-size: 0.18rem;
+	font-family: "微软雅黑";
+	line-height: 0.3rem;
+	padding: 0 0.35rem 0.2rem 0.35rem;
+}
+.containpart3text2{
+	width: 8.6rem;
+	margin: 0 auto;
+}
+.containpart3text2 p{
+	color: #FFFFFF;
+	font-size: 0.2rem;
+	line-height: 0.35rem;
+	font-family: "qingyuan";
+}
+.containpart3text2 p span{
+	font-size: 0.28rem;
+	font-weight: bold;
+	color: #fff100;
+}
+.commonalityBtn3{
+	width: 4.9rem;
+	height: 0.55rem;
+	margin: 0 auto;
+	margin-top: 0.3rem;
+	border-radius: 0.5rem;
+	border: 2px #fff100 solid;
+}
+.commonalityBtn3 p a{
+	color: white;
+	display: block;
+	font-family:"qingyuan";
+	font-size: 0.25rem;
+	text-align: center;
+	line-height: 0.55rem;
+	cursor: pointer;
+}
+.commonalityBtn3 p a span{
+	color: #fff100;
+	font-size: 0.32rem;
+	font-weight: bold;
+}
+/*第四部分*/
+.containpart4{
+	width:100%;
+	margin: 0 auto;
+	overflow: hidden;
+	height: 8.3rem;
+	background-size:100% 100% ;
+	background: url(../img/img3.png) center no-repeat;
+} 
+.containpart4title{
+	margin-top: 0.6rem;
+}
+.containpart4titlep1{
+	margin-left: 3.1rem;
+	color: #8fa5b1;
+	font-size: 0.36rem;
+	font-family: "qingyuan";
+}
+.containpart4titlep2{
+	margin-left: 3.8rem;
+	color:#008ddc ;
+	font-size:0.48rem ;
+	font-family: "qingyuan";
+}
+.containpart4titlep2 span{
+	color: #fe8f00;
+	font-size: 0.48rem;
+}
+.containpart4text1{
+	margin-top: 0.2rem;
+	overflow: hidden;
+}
+.containpart4text1>div{
+	width: 2rem;
+	height: 2.5rem;
+	float: left;
+}
+.containpart4text1>div img{
+	display: block;
+	margin: 0 auto;
+}
+.containpart4text1>div p{
+	margin-left: 0.05rem;
+	width: 2rem;
+	font-size: 0.28rem;
+	line-height: 0.42rem;
+	color: #808080;
+	text-align: center;
+}
+.containpart4text1part1{
+	margin: 0 0.4rem 0 1.2rem;
+}
+.containpart4text1part2{
+	margin: 0 0.4rem 0 0.4rem;
+}
+.containpart4text1part3{
+	margin: 0 1.2rem 0 0.4rem;
+}
+.containpart4text1part4{
+	margin: 0 0.3rem 0 0.2rem;
+}
+.containpart4text1part5{
+	margin: 0 0.2rem 0 0.3rem;
+}
+.containpart4text1part6{
+	margin: 0 0.2rem 0 0.3rem;
+}
+.containpart4text1part7{
+	margin: 0 0.2rem 0 0.3rem;
+}
+.commonalityBtn4{
+	width: 4.9rem;
+	height: 0.55rem;
+	margin: 0 auto;
+	margin-top: 0.5rem;
+	border-radius: 0.5rem;
+	border: 2px #3dc6ff solid;
+}
+.commonalityBtn4 p a{
+	color: #8fa5b1;
+	display: block;
+	font-family:"qingyuan";
+	font-size: 0.25rem;
+	text-align: center;
+	line-height: 0.55rem;
+	cursor: pointer;
+}
+.commonalityBtn4 p span{
+	color: #FE8F00;
+	font-size: 0.32rem;
+	font-weight: bold;
+}
+/*第五部分*/
+.containpart5{
+	background-color: #ebf2f4;
+	height: 8.3rem;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	background-size:100% 100% ;
+	background: url(../img/img4.png) center no-repeat;
+	background-size: 100% 100%;
+	font-family: "qingyuan";
+}
+.containpart5title{
+	margin-top: 0.3rem;
+}
+.containpart5titlep1{
+	margin-left: 3rem;
+	font-size: 0.48rem;
+	color: #008ddc;
+}
+.containpart5titlep2{
+	text-align: center;
+	color: #8fa5b1;
+	font-size: 0.36rem;
+}
+.containpart5titlep2 span{
+	text-align: center;
+	color: #fe8f00;
+	font-size: 0.48rem;
+}
+.containpart5text1{
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 0.5rem;
+}
+.containpart5text1part{
+	width: 3.1rem;
+	height: 4rem;
+	float: left;
+	margin: 0 0.1rem 0 0.1rem;
+}
+.containpart5text1parttop{
+	border-radius: 50%;
+	width: 1.8rem;
+	height: 1.8rem;
+	margin: 0 auto;
+}
+.containpart5text1parttop p{
+	font-size: 0.35rem;
+	text-align: center;
+	line-height: 1.8rem;
+}
+.containpart5text1parttop p span{
+	font-size: 0.48rem;
+	text-align: center;
+	line-height: 1.8rem;
+}
+.parttop1{
+	border: 0.03rem #2dc1ff solid;
+	overflow: hidden;
+}
+.parttop1 p{
+	color: #2dc1ff;
+}
+.parttop2 p{
+	color: #feb901;
+}
+.parttop3 p{
+	color: #f36f7b;
+}
+.parttop2{
+	border: 0.03rem #feb901 solid;
+	overflow: hidden;
+}
+.parttop3{
+	border: 0.03rem #f36f7b solid;
+	overflow: hidden;
+}
+.containpart5text1partbot{
+	margin-top: 0.6rem;	
+}
+.containpart5text1partbot p{
+	color: #808080;
+	padding: 0 0.05rem 0 0.2rem;
+	font-size: 0.22rem;
+	line-height: 0.4rem;
+}
+.containpart5text2{
+	height: 0.6rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.containpart5text2 p{
+	width: 10rem;
+}
+.containpart5text2 p img{
+	width: 5.5rem;
+	display:block;
+	margin: 0 auto;
+}
+.containpart5text2 span{
+	display:block;
+	margin: -0.5rem 0 0 3.15rem;
+	color: #FFFFFF;
+	font-size: 0.28rem;
+}
+.commonalityBtn5{
+	width: 4.9rem;
+	height: 0.55rem;
+	margin: 0 auto;
+	margin-top: 0.3rem;
+	border-radius: 0.5rem;
+	border: 2px #3dc6ff solid;
+}
+.commonalityBtn5 p a{
+	color: #8fa5b1;
+	display: block;
+	font-family:"qingyuan";
+	font-size: 0.25rem;
+	text-align: center;
+	line-height: 0.55rem;
+	cursor: pointer;
+}
+.commonalityBtn5 p span{
+	color: #FE8F00;
+	font-size: 0.32rem;
+	font-weight: bold;
+}
+/*第六部分*/
+.containpart6{
+	overflow: hidden;
+	height: 8.3rem;
+	width: 100%;
+	background-size:100% 100% ;
+	margin: 0 auto;
+	background: url(../img/img6.png) center no-repeat;
+}
+.containpart6title{
+	margin-top: 0.3rem;
+}
+.containpart6title p{
+	font-family: "qingyuan";
+	font-size: 0.48rem;
+	line-height: 0.6rem;
+}
+.containpart6titlep1{
+	color: #008ddc;
+	margin-left:3.1rem ;
+}
+.containpart6titlep2{
+	text-align: center;
+	color:#8fa5b1 ;
+	font-size: 0.3rem;
+}
+.containpart6titlep2 span{
+	color:#fe9b01 ;
+}
+.containpart6text1{
+	overflow: hidden;
+	height: 4.8rem;
+	margin-top: 0.5rem;
+}
+.containpart6text1>div{
+	width: 5rem;
+	height: 4.65rem;
+	float: left;
+}
+.containpart6text1left{
+	background-color:#d2d6da ;
+}
+.containpart6text1leftp1{
+	font-family: "hanyi";
+	color: #414141;
+	font-size: 0.36rem;
+	line-height: 0.6rem;
+	text-align: center;
+	margin-top: 0.3rem;
+} 
+.containpart6text1leftp2{
+	text-align: center;
+	font-family: "微软雅黑";
+	color: #414141;
+	font-size: 0.2rem;
+	line-height: 0.6rem;
+	font-weight: bold;
+} 
+.containpart6text1left>div{
+	overflow: hidden;
+}
+.containpart6text1left>div>div{
+	float: left;
+}
+.leftimgperson{
+	height: 3.1rem;
+	float: left;
+	margin-left: 0.3rem;
+}
+.leftimgperson img{
+	margin-top: 1rem;
+}
+.lefttextright{
+	width:2.5rem;
+	float:right;
+	margin-left: 0.2rem;
+}
+.lefttextright p{
+	color: #414141;
+	font-size: 0.2rem;
+	line-height: 0.4rem;
+}
+.containpart6text1right{
+	background: #cae6f4;
+	
+}
+.containpart6text1rightp1{
+	font-family: "hanyi";
+	color: #016ecc;
+	font-size: 0.36rem;
+	line-height: 0.6rem;
+	text-align: center;
+	margin-top: 0.3rem;
+} 
+.containpart6text1rightp2{
+	text-align: center;
+	font-family: "微软雅黑";
+	color: #016ecc;
+	font-size: 0.2rem;
+	line-height: 0.6rem;
+	font-weight: bold;
+} 
+.containpart6text1right>div{
+	overflow: hidden;
+}
+.containpart6text1right>div>div{
+	float: left;
+}
+.rightimgperson{
+	height: 2rem;
+	float: right;
+}
+.rightimgperson img{
+	margin-top: -0.05rem;
+}
+.righttextright{
+	width:5rem;
+	margin-left: 1.2rem;
+}
+.righttextrighttwo{
+	float: left;
+	margin-left: 1.2rem;
+	color: #016ecc;
+	font-size: 0.2rem;
+	line-height: 0.4rem;
+}
+.righttextright p{
+	color: #016ecc;
+	font-size: 0.2rem;
+	line-height: 0.4rem;
+}
+.vs{
+	height: 0.8rem!important;
+	width: 0.8rem!important;
+	border-radius:50% ;
+	border: 0.02rem whits solid;
+	background: #ff7140;
+	position: relative;
+	top:-2.7rem;
+	left: 4.6rem;
+}
+.vs p{
+	color: white;
+	font-size: 0.36rem;
+	line-height: 0.8rem;
+	font-family: "hanyi";
+	text-align: center;
+}
+.commonalityBtn6{
+	width: 4.9rem;
+	height: 0.55rem;
+	margin: 0 auto;
+	margin-top: 0.5rem;
+	border-radius: 0.5rem;
+	border: 2px #3dc6ff solid;
+}
+.commonalityBtn6 p a{
+	color: #8fa5b1;
+	display: block;
+	font-family:"qingyuan";
+	font-size: 0.25rem;
+	text-align: center;
+	line-height: 0.55rem;
+	cursor: pointer;
+}
+.commonalityBtn6 p span{
+	color: #FE8F00;
+	font-size: 0.32rem;
+	font-weight: bold;
+}
+/*第七部分*/
+.containpart7{
+	width: 100%;
+	margin: 0 auto;
+	height: 8.3rem;
+	overflow: hidden;
+	background:url(../img/img7.png) center no-repeat;
+	background-size:100% 100%;
+}
+.containpart7title{
+	margin-top: 0.3rem;
+}
+.containpart7title p{
+	font-family: "qingyuan";
+	font-size: 0.48rem;
+	line-height: 0.6rem;
+}
+.containpart7titlep1{
+	color: white;
+	margin-left:3.1rem ;
+}
+.containpart7titlep2{
+	text-align: center;
+	color:#8fa5b1 ;
+	font-size: 0.3rem;
+}
+.containpart7titlep2 span{
+	text-align: center;
+	color:#FE8F00 ;
+	font-size: 0.48rem;
+}
+.containpart7text1 p{
+	font-family: "微软雅黑";
+	text-align: center;
+	font-size:0.28rem;
+	color: white;
+	line-height: 0.6rem;
+}
+.containpart7text2{
+	overflow: hidden;
+}
+.containpart7text2>div{
+	float: left;
+	margin: 0.5rem 0.5rem 0.2rem 0.5rem;
+	height: 2.25rem;
+	width: 2.25rem;
+	border-radius: 50%;
+	border: 0.03rem #FE8F00 solid;
+}
+.banyuantop{
+	width: 2.1rem;
+	background: transparent;
+	margin-top: 0.075rem;
+	margin-left: 0.075rem;
+	border-radius:2.1rem 2.1rem 0 0;
+	height: 1.05rem;
+	text-align: center;
+	line-height: 0.9rem;
+}
+.banyuantop i{
+	color:#eb6100 ;
+}
+.banyuan{
+	width: 2.1rem;
+	margin-left: 0.075rem;
+	background: #eb6100;
+	border-radius:0 0 2.1rem 2.1rem;
+	height: 1.05rem;
+}
+.banyuan p{
+	font-family: "微软雅黑";
+	font-size: 0.32rem;
+	line-height: 0.8rem;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+.containpart7text3{
+	margin: 0.3rem 0 0.2rem 0;
+}
+.containpart7text3 p{
+	text-align: center;
+	font-size: 0.38rem;
+	color: white;
+	line-height: 0.66rem;
+	font-family: "微软雅黑";
+}
+.containpart7text3 p span{
+	color: #EB6100;
+	font-weight: bold;
+}
+.commonalityBtn7{
+	width: 4.9rem;
+	height: 0.55rem;
+	margin: 0 auto;
+	margin-top: 0.5rem;
+	border-radius: 0.5rem;
+	border: 2px white solid;
+}
+.commonalityBtn7 p a{
+	color: white;
+	display: block;
+	font-family:"qingyuan";
+	font-size: 0.25rem;
+	text-align: center;
+	line-height: 0.55rem;
+	cursor: pointer;
+}
+.commonalityBtn7 p span{
+	color: #EB6100;
+	font-size: 0.32rem;
+	font-weight: bold;
+}
+/*第八部分*/
+.containpart8{
+	background-size:100% 100% ;
+	overflow: hidden;
+	width: 100%;
+	height: 9.3rem;
+	margin: 0 auto;
+}
+.containpart8title{
+	margin-top: 0.3rem;
+	font-family: "qingyuan";
+}
+.containpart8titlep1{
+	color: #008ddc;
+	font-size: 0.48rem;
+	line-height: 0.6rem;
+	text-align: center;
+}
+.containpart8titlep2{
+	color: #8fa5b1;
+	font-size: 0.36rem;
+	line-height: 0.6rem;
+	text-align: center;
+	margin-left: 1.5rem;
+}
+.containpart8titlep2 span{
+	color: #fe9b01;
+	font-size: 0.48rem;
+	line-height: 0.6rem;
+}
+.containpart8titletext p{
+	color: #808080;
+	font-size: 0.25rem;
+	line-height: 0.34rem;
+	text-align: center;
+}
+.commonalityBtn8{
+	width: 4.9rem;
+	height: 0.55rem;
+	margin: 0 auto;
+	border-radius: 0.5rem;
+	border: 2px #4dc6fa solid;
+}
+.commonalityBtn8 p a{
+	color: #8fa5b1;
+	display: block;
+	font-family:"qingyuan";
+	font-size: 0.25rem;
+	text-align: center;
+	line-height: 0.55rem;
+	cursor: pointer;
+}
+.commonalityBtn8 p span{
+	color: #fe9b01;
+	font-size: 0.32rem;
+	font-weight: bold;
+}
+/*第九部分*/
+.containpart9{
+	overflow: hidden;
+	width: 100%;
+	margin: 0 auto;
+	background-size:100% 100% ;
+	height: 16.8rem;
+	background-color:#edf4f5 ;
+	/*background:url(../img/lastmap.png) no-repeat;*/
+}
+.containpart9title{
+	margin-top: 0.3rem;
+	font-family: "qingyuan";
+}
+.containpart9titlep1{
+	color: #008ddc;
+	font-size: 0.48rem;
+	line-height: 0.6rem;
+	text-align: center;
+}
+.containpart9titlep2{
+	color: #8fa5b1;
+	font-size: 0.36rem;
+	line-height: 0.6rem;
+	margin-left: 4.9rem;
+}
+.containpart9titlep2 span{
+	color: #fe9b01;
+	font-size: 0.48rem;
+	line-height: 0.6rem;
+}
+.containpart9text1{
+	margin: 0.2rem 0 0.5rem 0;
+}
+.containpart9text1 p{
+	font-size: 0.25rem;
+	line-height: 0.35rem;
+	color: #808080;
+	text-align: center;
+	font-family: "微软雅黑";
+}
+.mapshijie{
+	width: 10rem;
+	margin: 0 auto;
+	background: url(../img/lastmap1.png) no-repeat 100%;
+}
+.containpart9text2>ul{
+	overflow: hidden;
+	width: 10rem;
+	margin: 0 auto;
+
+}
+.containpart9text2>ul li{
+	margin: 0;
+	height: 1rem;
+	width: 0.977rem;
+	overflow: hidden;
+	list-style-type: none;
+	float: left;
+	border:1px #b5b5b5 solid;
+}
+.containpart9text2>ul li img{
+	width: 1rem;
+	height: 1rem;
+}
+.commonalityBtn9{
+	width: 4.9rem;
+	height: 0.55rem;
+	margin: 0.2rem auto;
+	border-radius: 0.5rem;
+	border: 2px #4dc6fa solid;
+}
+.commonalityBtn9 p a{
+	color: #8fa5b1;
+	display: block;
+	font-family:"qingyuan";
+	font-size: 0.25rem;
+	text-align: center;
+	line-height: 0.55rem;
+	cursor: pointer;
+}
+.commonalityBtn9 p span{
+	color: #fe9b01;
+	font-size: 0.32rem;
+	font-weight: bold;
+}
+.containpart9title2{
+	margin-top: 1rem;
+	font-family: "qingyuan";
+}
+.containpart9titlep3{
+	color: #008ddc;
+	font-size: 0.48rem;
+	line-height: 0.6rem;
+	margin-left: 4.1rem;
+}
+.containpart9titlep4{
+	text-align: center;
+	color: #8fa5b1;
+	font-size: 0.36rem;
+	line-height: 0.6rem;
+	
+}
+.containpart9titlep4 span{
+	color: #fe9b01;
+	font-size: 0.48rem;
+	line-height: 0.6rem;
+}
+.containpart9text3{
+	margin-top: 0.3rem;
+}
+.containpart9text3 p{
+	text-align: center;
+	text-indent: 0.3rem;
+	font-size: 0.25rem;
+	color: #808080;
+	line-height: 0.35rem;
+}
+.containpart9text4{
+	width: 10rem;
+	background: url(../img/lastmap2.png) no-repeat 100%;
+	height: 7.1rem;
+	overflow: hidden;
+}
+.containpart9text4>div>div{
+	width:1.15rem;
+	height: 0.45rem;
+	background: #92c3df;
+	overflow: hidden;
+}
+.containpart9text4>div>div img{
+	width: 0.6rem;
+	height: 0.45rem;
+	display: block;
+	float: left;
+}
+.containpart9text4>div>div>div p{
+	float: left;
+	padding:0.08rem 0 0 0.02rem;
+	width: 0.5rem;
+	height: 0.45rem;
+	color: white;
+	font-size: 0.12rem;
+	line-height: 0.14rem;
+	font-family: "微软雅黑";
+}
+.containpart9text4>div>p span{
+	display: block;
+	position: relative;
+	top: -0.05rem;
+	left: 0.6rem;
+    width: 0;
+    height: 0;
+    border-left: 0.1rem solid transparent;
+    border-right: 0.1rem solid transparent;
+    border-top: 0.15rem solid #92c3df;
+}
+
+.containpart9text4>div>p{
+	width:1.15rem;
+}
+.containpart9text4>div>div{ 
+    cursor: pointer;  
+    transition: all 0.6s; 
+}  
+.containpart9text4>div>div:hover{  
+    transform: scale(1.2);  
+}  
+.beijing{
+	position: relative;
+	top: 2.2rem;
+	left:5.6rem;
+}
+.tianjing{
+	position: relative;
+	top: 2.1rem;
+	left: 6rem;
+}
+.taiyuan{
+	position: relative;
+	top: 2rem;
+	left: 5.2rem;
+}
+.yinchuan{
+	position: relative;
+	top: 0.7rem;
+	left: 3.3rem;
+}
+.dalian{
+	position: relative;
+	top: 0rem;
+	left: 6.8rem;
+}
+.chengdu{
+	position: relative;
+	top: 1.2rem;
+	left:3.8rem;
+}
+.wuhan{
+	position: relative;
+	top:0.6rem;
+	left: 5.6rem;
+}
+.hangzhou{
+	position: relative;
+	top: -0.1rem;
+	left: 6.8rem;
+}
+.yiwu{
+	position: relative;
+	top: -0.8rem;
+	left: 7rem;
+}
+.changsha{
+	position: relative;
+	top: 0.1rem;
+	left: 5.3rem;
+}
+.guangzhou{
+	position: relative;
+	top:-0.2rem;
+	left: 6rem;
+}
+.shengzheng{
+	position: relative;
+	top: -1.2rem;
+	left: 6.6rem;
+}
+.nanning{
+	position: relative;
+	top: -1.2rem;
+	left: 5.3rem;
+}
+
+/*底部*/
+.footAll{
+	width: 100%;
+	margin: 0 auto;
+	background: #434343;
+	height: 2.3rem;
+	overflow: hidden;
+}
+.footerAllCenter{
+	height: 2.3rem;
+	width: 10rem;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.footerAllCenter>div{
+	float: left;
+	overflow: hidden;
+}
+.footCenterFirst{
+	width: 1.65rem;
+	height: 2.3rem;
+	margin: 0 ;
+	padding: 0;
+	margin-left: 0.1rem;
+}
+.footCenterFirst img{
+	display:block;
+	width: 1.5rem;
+}
+.footerAllCenter>div{
+	height: 1.5rem;
+	margin-top: 0.4rem;
+
+}
+.footerAllCenter>div h5{
+	font-size: 0.14rem;
+	color: #b2b2b2;
+	line-height: 0.3rem;
+	font-weight: bold;
+	margin-bottom: 0.15rem;
+	margin-top: 0.1rem;
+}
+.footerAllCenter>div p{
+	font-size: 0.12rem;
+	line-height: 0.3rem;
+}
+.footerAllCenter>div p a{
+	color: #737373;
+}
+.footHelpCenter,.footAboutUs{
+	text-align: center;
+	width: 1.2rem;
+	border-left: 0.01rem #181818 solid;
+}
+.footerContactUs{
+	width: 2.3rem;
+	padding: 0 0.3rem 0 0.3rem;
+	border-left: 0.01rem #181818 solid;
+}
+.footPhoneHot i{
+	color: white;
+	font-size: 0.18rem;
+	display: block;
+}
+.footerOrder{
+	padding-left: 0.2rem;
+	width: 2.5rem;
+	overflow: hidden;
+	border-left: 0.01rem #181818 solid;
+}
+.footerPhoneHot{
+	float: left;
+}
+.footCode{
+	float: left;
+	
+}
+
+
+
+
+
+
+
+
